@@ -1,0 +1,179 @@
+
+
+.graph_wrap {
+    padding: 34px 30px 60px 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.graph_wrap .graph_tit {
+    display: flex;
+}
+
+.graph_wrap .graph_tit h3 {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 18px;
+    color: #333;
+    padding-right: 12px;
+}
+
+.graph_wrap .graph_tit p {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 14px;
+    color: #777;
+    transform: translateY(3px);
+}
+
+.graph_wrap .graph_cont {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.graph_wrap .graph_cont .graph_img {
+    width: 180px;
+    height: 180px;
+    background: url(../icon/img_circle\ graph@2x.png);
+    background-size: cover;
+}
+
+.box6_graph4 .graph_wrap .graph_cont .graph_img {
+    width: 9.375vw;
+    height: 9.375vw;
+    background: url(../icon/img_circle\ graph2@2x.png);
+    background-size: cover;
+}
+
+.graph_wrap .graph_cont .graph_list {}
+
+.graph_wrap .graph_cont .graph_list li {
+    display: flex;
+    line-height: 2;
+    align-items: center;
+}
+
+.graph_wrap .graph_cont .graph_list li:first-child {
+    margin-top: 0;
+}
+
+.graph_wrap .graph_cont .graph_list li span {
+    width: 10px;
+    height: 10px;
+    background-color: #ed7e3b;
+    border-radius: 100%;
+    display: block;
+    margin-right: 8px;
+}
+
+.graph_wrap .graph_cont .graph_list li:nth-child(2) span {
+    width: 10px;
+    height: 10px;
+    background-color: #eda13f;
+    border-radius: 100%;
+    display: block;
+}
+
+.graph_wrap .graph_cont .graph_list li:nth-child(3) span {
+    width: 10px;
+    height: 10px;
+    background-color: #efc930;
+    border-radius: 100%;
+    display: block;
+}
+
+.graph_wrap .graph_cont .graph_list li:nth-child(4) span {
+    width: 10px;
+    height: 10px;
+    background-color: #f5eda7;
+    border-radius: 100%;
+    display: block;
+}
+
+.graph_wrap .graph_cont .graph_list li:nth-child(5) span {
+    width: 10px;
+    height: 10px;
+    background-color: #eff2d2;
+    border-radius: 100%;
+    display: block;
+}
+
+.graph_wrap .graph_cont .graph_list li:nth-child(6) span {
+    width: 10px;
+    height: 10px;
+    background-color: #f0aa7f;
+    border-radius: 100%;
+    display: block;
+}
+
+.graph_wrap .graph_cont .graph_list li p {
+    width: 12.3438vw;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 14px;
+    color: #333;
+}
+
+
+@media (max-width: 1500px) {
+    .graph_wrap {
+        padding: 24px 20px;
+    }
+
+    .graph_wrap .graph_tit {
+        display: block;
+        font-size: 16px;
+    }
+
+    .graph_wrap .graph_tit h3 {
+        font-size: 16px;
+    }
+
+    .graph_wrap .graph_tit p {
+        font-family: 'SpoqaHanSansNeo-Medium';
+        font-size: 12px;
+    }
+
+    .graph_wrap .graph_cont {
+        width: 100%;
+        display: block;
+    }
+
+    .graph_wrap .graph_cont .graph_img {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+    .box6_graph4 .graph_wrap .graph_cont .graph_img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .graph_wrap .graph_cont .graph_list {
+        padding-top: 30px;
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .graph_wrap .graph_cont .graph_list li {
+        line-height: 1.8;
+    }
+
+    .graph_wrap .graph_cont .graph_list li p {
+        width: auto;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:390px){
+    .graph_wrap .graph_cont .graph_img {
+        width: 45vw;
+        height: 45vw;
+    }
+    .graph_wrap .graph_cont .graph_list {
+        width: inherit;
+    }
+}

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  minimum-scale=1">
+    <title>04_01customerService</title>
+
+    <!-- css -->
+    <link href="../assets/css/04contents_02analysis_01customerService.css" rel="stylesheet">
+    <link href="../assets/css/common.css" rel="stylesheet">
+    <link href="../assets/css/common_header.css" rel="stylesheet">
+    <link href="../assets/css/common_accordion_menu.css" rel="stylesheet">
+    <link href="../assets/css/comm_cont_title1.css" rel="stylesheet">
+    <link href="../assets/css/common_footer.css" rel="stylesheet">
+    <link href="../assets/css/reset.css" rel="stylesheet">
+
+    <!-- 스크립트 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="customerService">
+
+        <!-- 헤더 -->
+    <header class="com_header">
+        <div class="com_header_wrap">
+            <div class="com_header_cont">
+                <div class="left">
+                    <div class="cont_ico_menu"></div>
+                    <a class="cont_ico_logo" href="./04contents_01dashboard.html"></a>
+                    <div class="cont_ico_help"></div>
+                    <div class="cont_ico_notice"></div>
+                    <div class="cont_text_notice">
+                        <p>부가서비스 정책 일부 변경안내
+                            <span>2020.05.04</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="cont_box_my">
+                        <div class="ico_profile"></div>
+                        <p class="text_myname">홍길동 님</p>
+                        <a class="icon_arrow_b"></a>
+                    </div>
+                    <a class="cont_ico_logout"></a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+        <!-- 아코디언 메뉴 -->
+        <nav class="com_acomenu">
+            <div class="com_acomenu_wrap">
+                <div class="com_acomenu_header">
+                    <div class="ico_close"></div>
+                    <div class="name">홍길동 님</div>
+                    <div class="ico_notice"></div>
+                </div>
+                <ul class="com_acomenu_list">
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_dashboard.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_costanalysis.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">비용분석</div>
+                            <img class="ico_down" src="../assets/icon/Color Overlay@3x.png">
+                            <img class="ico_down_on" src="../assets/icon/Color Overlay@3x.png" no-repeat center center>
+                        </a>
+                        <ul class="acomenu_subject">
+                            <li>
+                                <a class="acomenu_cont" href="./04contents_02analysis_01customerService.html">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 서비스 비용</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 잔액(선급금) 조회</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 Sport 인스턴스 추천관리</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont sport" href="#">
+                                    <div class="acomenu_cont_wrap sport">
+                                        <p class="pc_sport">Sport instance Recommentdation Mgt by Customer</p>
+                                        <p class="mobile_sport">SportInstance Recommentdation Mgt by Customer</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_optimization.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">비용최적화</div>
+                            <img class="ico_down" src="../assets/icon/Color Overlay@3x.png">
+                            <img class="ico_down_on" src="../assets/icon/Color Overlay@3x.png" no-repeat center center>
+                        </a>
+                        <ul class="acomenu_subject">
+                            <li>
+                                <a class="acomenu_cont" href="./04contents_02analysis_01customerService.html">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 서비스 비용</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="./04contents_02analysis_02Balance.html">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 잔액(선급금) 조회</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 Sport 인스턴스 추천관리</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont sport" href="./04contents_02analysis_04spotInstance.html">
+                                    <div class="acomenu_cont_wrap sport">
+                                        <p class="pc_sport">Sport instance Recommentdation Mgt by Customer</p>
+                                        <p class="mobile_sport">SportInstance Recommentdation Mgt by Customer</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_claim.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">정산/청구관리</div>
+                            <img class="ico_down" src="../assets/icon/Color Overlay@3x.png">
+                            <img class="ico_down_on" src="../assets/icon/Color Overlay@3x.png" no-repeat center center>
+                        </a>
+                        <ul class="acomenu_subject">
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 서비스 비용</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 잔액(선급금) 조회</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 Sport 인스턴스 추천관리</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont sport" href="#">
+                                    <div class="acomenu_cont_wrap sport">
+                                        <p class="pc_sport">Sport instance Recommentdation Mgt by Customer</p>
+                                        <p class="mobile_sport">SportInstance Recommentdation Mgt by Customer</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_credit.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">크래딧 관리</div>
+                            <img class="ico_down" src="../assets/icon/Color Overlay@3x.png">
+                            <img class="ico_down_on" src="../assets/icon/Color Overlay@3x.png" no-repeat center center>
+                        </a>
+                        <ul class="acomenu_subject">
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 서비스 비용</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 잔액(선급금) 조회</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 Sport 인스턴스 추천관리</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont sport" href="#">
+                                    <div class="acomenu_cont_wrap sport">
+                                        <p class="pc_sport">Sport instance Recommentdation Mgt by Customer</p>
+                                        <p class="mobile_sport">SportInstance Recommentdation Mgt by Customer</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_sales.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">매입/매출관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_resource.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">자원현황</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_desk@3x.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">서비스데스크</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_monitoring.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">모니터링</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_management.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">정보관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_support.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">고객지원</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <!-- 메인 -->
+        <main class="main_customerService">
+            <div class="main_wrap">
+                <div class="comm_cont_header">
+                    <div class="comm_cont_header_tit">고객사별 서비스별 비용</div>
+                    <div class="selectbox_wrap">
+                        <select name="선택" class="selectbox">
+                            <option value="선택" selected="selected" class="selectbox_cont">선택</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <select name="선택" class="selectbox">
+                            <option value="선택" selected="selected" class="selectbox_cont">그룹사 전체</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <select name="선택" class="selectbox">
+                            <option value="선택" selected="selected" class="selectbox_cont">고객구분 전체</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <select name="선택" class="selectbox">
+                            <option value="선택" selected="selected" class="selectbox_cont">상태 전체</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button class="lookup_btn">조회</button>
+                    </div>
+                </div>
+
+                <section class="section_wrap_customerService">
+                    <div class="section_container">
+                        <div class="section_subtit">
+                            <h3>서브 타이틀</h3>
+                            <div>(총<span>00</span>건)</div>
+                        </div>
+                        <div class="section_cont">
+                            <table class="table_customerService">
+                                <th>
+                                    <input class="input_chek" id="table" type="checkbox" value="off" />
+                                </th>
+                                <th>순번</th>
+                                <th>고객사명</th>
+                                <th>사업자번호</th>
+                                <th>담당자명</th>
+                                <th>연락처</th>
+                                <th>상태</th>
+                                <th>계약여부</th>
+                                <th>등록일시</th>
+                                <th>등록자</th>
+                                <tr>
+                                    <td>
+                                        <input class="input_chek" id="table" type="checkbox" value="off" />
+                                    </td>
+                                    <td>1</td>
+                                    <td class="link">
+                                        <a href="#" target="_blank">스타벅스커피코리아</a>
+                                    </td>
+                                    <td>000-00-00000</td>
+                                    <td>홍*동</td>
+                                    <td>010-00**-00**</td>
+                                    <td>사용</td>
+                                    <td>계약</td>
+                                    <td>2021-00-00 00:00</td>
+                                    <td>abc****</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="input_chek" id="table" type="checkbox" value="off" />
+                                    </td>
+                                    <td>2</td>
+                                    <td class="link">
+                                        <a href="#" target="_blank">스타벅스커피코리아</a>
+                                    </td>
+                                    <td>000-00-00000</td>
+                                    <td>홍*동</td>
+                                    <td>010-00**-00**</td>
+                                    <td>미사용</td>
+                                    <td>계약</td>
+                                    <td>2021-00-00 00:00</td>
+                                    <td>abc****</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="input_chek" id="table" type="checkbox" value="off" />
+                                    </td>
+                                    <td>3</td>
+                                    <td class="link">
+                                        <a href="#" target="_blank">스타벅스커피코리아</a>
+                                    </td>
+                                    <td>000-00-00000</td>
+                                    <td>홍*동</td>
+                                    <td>010-00**-00**</td>
+                                    <td>사용</td>
+                                    <td>계약</td>
+                                    <td>2021-00-00 00:00</td>
+                                    <td>abc****</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="input_chek" id="table" type="checkbox" value="off" />
+                                    </td>
+                                    <td>4</td>
+                                    <td class="link">
+                                        <a href="#" target="_blank">스타벅스커피코리아</a>
+                                    </td>
+                                    <td>000-00-00000</td>
+                                    <td>홍*동</td>
+                                    <td>010-00**-00**</td>
+                                    <td>사용</td>
+                                    <td>계약</td>
+                                    <td>2021-00-00 00:00</td>
+                                    <td>abc****</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="input_chek" id="table" type="checkbox" value="off" />
+                                    </td>
+                                    <td>5</td>
+                                    <td class="link">
+                                        <a href="#" target="_blank">스타벅스커피코리아</a>
+                                    </td>
+                                    <td>000-00-00000</td>
+                                    <td>홍*동</td>
+                                    <td>010-00**-00**</td>
+                                    <td>미사용</td>
+                                    <td>계약</td>
+                                    <td>2021-00-00 00:00</td>
+                                    <td>abc****</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="input_chek" id="table" type="checkbox" value="off" />
+                                    </td>
+                                    <td>6</td>
+                                    <td class="link">
+                                        <a href="#" target="_blank">스타벅스커피코리아</a>
+                                    </td>
+                                    <td>000-00-00000</td>
+                                    <td>홍*동</td>
+                                    <td>010-00**-00**</td>
+                                    <td>사용</td>
+                                    <td>계약</td>
+                                    <td>2021-00-00 00:00</td>
+                                    <td>abc****</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="input_chek" id="table" type="checkbox" value="off" />
+                                    </td>
+                                    <td>7</td>
+                                    <td class="link">
+                                        <a href="#" target="_blank">스타벅스커피코리아</a>
+                                    </td>
+                                    <td>000-00-00000</td>
+                                    <td>홍*동</td>
+                                    <td>010-00**-00**</td>
+                                    <td>사용</td>
+                                    <td>계약</td>
+                                    <td>2021-00-00 00:00</td>
+                                    <td>abc****</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="input_chek" id="table" type="checkbox" value="off" />
+                                    </td>
+                                    <td>8</td>
+                                    <td class="link">
+                                        <a href="#" target="_blank">스타벅스커피코리아</a>
+                                    </td>
+                                    <td>000-00-00000</td>
+                                    <td>홍*동</td>
+                                    <td>010-00**-00**</td>
+                                    <td>미사용</td>
+                                    <td>계약</td>
+                                    <td>2021-00-00 00:00</td>
+                                    <td>abc****</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="input_chek" id="table" type="checkbox" value="off" />
+                                    </td>
+                                    <td>9</td>
+                                    <td class="link">
+                                        <a href="#" target="_blank">스타벅스커피코리아</a>
+                                    </td>
+                                    <td>000-00-00000</td>
+                                    <td>홍*동</td>
+                                    <td>010-00**-00**</td>
+                                    <td>사용</td>
+                                    <td>계약</td>
+                                    <td>2021-00-00 00:00</td>
+                                    <td>abc****</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- 푸터 -->
+    <footer class="com_footer">
+        <div class="footer_wrap">
+            <div class="footer_container">
+                <div class="text_left">
+                    (주)신세계아이앤씨 대표이사 김장욱<br>
+                    서울특별시 중구 소공로 48 우리금융남산타워 10층<br>
+                    Copyright ⓒ E-MART EVERYDAY inc. ALL Rights Reserved<br>
+                </div>
+                <div class="text_right">
+                    <span><strong>개인정보 처리 방침</strong></span>
+                    <p>
+                        고객센터 1566-1233<br>
+                    운영시간 평일 09:00 ~ 18:00
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+    <script>
+        // 아코디언 슬라이드 
+        $('.acomenu_tit').on('click', function () {
+
+            if ($(this).hasClass('on')) {
+                slideUp();
+            } else {
+                slideUp();
+                $(this).addClass('on').next().slideDown();
+            }
+
+            function slideUp() {
+                $('.acomenu_tit').removeClass('on').next().slideUp();
+            };
+        });
+
+        // 아코디언 메뉴 클릭시 효과
+        $('.acomenu_cont_wrap').on('click', function () {
+
+            if ($(this).hasClass('on')) {
+                active();
+            } else {
+                active();
+                $(this).addClass('on');
+            }
+
+            function active() {
+                $('.acomenu_cont_wrap').removeClass("on");
+            };
+        });
+
+        // 메뉴 클릭시 아코디언메뉴 등장/ x 클릭시 사라지게
+        $('.cont_ico_menu').click(function () {
+            $('.com_acomenu').css("left", "0");
+        });
+        $('.ico_close').click(function () {
+            $('.com_acomenu').css("left", "-220px");
+        });
+    </script>
+</body>
+
+</html>

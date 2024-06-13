@@ -1,0 +1,224 @@
+.com_acomenu {
+    width: fit-content;
+    background: #1f2530;
+    grid-area: sidebar;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.com_acomenu::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.com_acomenu_header {
+    width: 220px;
+    height: 80px;
+    position: relative;
+    display: none;
+}
+
+.com_acomenu_header .ico_close {
+    width: 20px;
+    height: 20px;
+    background: url(../icon/icon_close@3x.png) no-repeat center center;
+    background-size: cover;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.com_acomenu_header .name {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 18px;
+    color: #fff;
+    padding-top: 44px;
+    margin-left: 14px;
+}
+
+.com_acomenu_header .ico_notice {
+    width: 16px;
+    height: 16px;
+    background: url(../icon/icon_notice@3x.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    left: 90px;
+    top: 46px;
+}
+
+.com_acomenu_list {}
+
+.com_acomenu_list>li>a {
+    width: 260px;
+    height: 60px;
+    border-top: 1px solid #313640;
+}
+
+.acomenu_tit {
+    background-color: #1f2530;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.acomenu_tit .ico_tit {
+    width: 36px;
+    height: 36px;
+    margin-left: 16px;
+}
+
+.acomenu_tit .text_tit {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 16px;
+    color: #9f9b9b;
+    margin-left: 10px;
+}
+
+.acomenu_tit .ico_down {
+    width: 15px;
+    height: 8px;
+    position: absolute;
+    right: 24px;
+    top: 27px;
+}
+
+.acomenu_subject {
+    display: none;
+}
+
+.acomenu_cont {
+    display: block;
+}
+
+.acomenu_cont_wrap {
+    width: 260px;
+    height: 60px;
+    background: #363b45;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-top: 1px solid #41464f;
+}
+
+.acomenu_cont_wrap p {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 14px;
+    color: #9f9b9b;
+    margin-left: 24px;
+}
+
+.mobile_sport {
+    display: none;
+}
+
+
+/* on */
+.acomenu_tit.on {
+    background-color: #363b45;
+}
+
+.acomenu_tit .ico_tit_on {
+    width: 36px;
+    height: 36px;
+    margin-left: 16px;
+    display: none;
+}
+
+.acomenu_tit.on .ico_tit {
+    display: none;
+}
+
+.acomenu_tit.on .ico_tit_on {
+    display: block;
+}
+
+.acomenu_tit.on .text_tit {
+    color: #fffefe;
+}
+
+.acomenu_tit .ico_down_on {
+    width: 15px;
+    height: 8px;
+    position: absolute;
+    right: 24px;
+    top: 27px;
+    transform: rotate(180deg);
+    display: none;
+}
+
+.acomenu_tit.on .ico_down {
+    display: none;
+}
+
+.acomenu_tit.on .ico_down_on {
+    display: block;
+}
+
+/* .acomenu_cont.on {
+    display: block;
+} */
+
+.acomenu_cont .acomenu_cont_wrap.on p {
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .com_acomenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -220px;
+        transition: 1s;
+    }
+
+
+    .com_acomenu_header {
+        display: block;
+    }
+
+    .com_acomenu_list>li>a {
+        width: 220px;
+        height: 51px;
+    }
+
+    .acomenu_cont_wrap {
+        width: 220px;
+        height: 51px;
+    }
+
+    .acomenu_tit .ico_tit {
+        width: 24px;
+        height: 24px;
+    }
+
+    .acomenu_tit .text_tit {
+        font-size: 14px;
+    }
+
+    .acomenu_tit .ico_down {
+        width: 13px;
+        height: 6px;
+        position: absolute;
+        right: 16px;
+        top: 22px;
+    }
+
+    .acomenu_cont_wrap p {
+        font-size: 12px;
+    }
+
+    .sport {
+        height: 74px !important;
+    }
+
+    .pc_sport {
+        display: none;
+    }
+
+    .mobile_sport {
+        width: 161px;
+        height: 36px;
+        line-height: 19px;
+        word-break: break-all;
+        display: block;
+    }
+}

@@ -1,0 +1,13 @@
+<svg id="아이콘-검색-홈" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none}.cls-2{stroke:#feae2a;stroke-width:2px}
+        </style>
+    </defs>
+    <path id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" d="M0 0h20v20H0z"/>
+    <g id="타원_24" data-name="타원 24" class="cls-2" transform="translate(1 1)">
+        <circle cx="8" cy="8" r="8" style="stroke:none"/>
+        <circle class="cls-1" cx="8" cy="8" r="7"/>
+    </g>
+    <path id="패스_294" data-name="패스 294" class="cls-2" d="m0 0 4.549 4.564" transform="translate(14.5 14.5)"/>
+</svg>

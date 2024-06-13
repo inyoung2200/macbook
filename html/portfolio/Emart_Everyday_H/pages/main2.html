@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">ckw
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+    <title>Emart_Everyday</title>
+
+    <!-- css -->
+    <link href="../assets/css/main2.css" rel="stylesheet">
+    <link href="../assets/css/reset.css" rel="stylesheet">
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header id="header">
+        <div class="h_container">
+            <div class="header_top">
+                <div class="logo">
+                    <img src="../assets/icon/drawable/bi.svg">
+                </div>
+                <a class="pin" href="#">
+                    <img src="../assets/icon/drawable/icon_pin_focus.svg">
+                </a>
+            </div>
+            <div class="header_bottom">
+                <div class="search">
+                    <input class="search_input" type="search" name="search" required=""
+                        oninvalid="this.setCustomValidity('검색어를 입력해주세요.')" placeholder="상품을 검색해보세요."
+                        readonly="readonly"></input>
+                    <button class="search_btn" type="submit" title="검색"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- 메인 슬라이드 배너 -->
+        <div id="banner">
+            <div class="b_container">
+                <div class="slider_wrapper">
+                    <div class="slider_img">
+                        <div class="slider">
+                            <img src="../assets/img/banner.png">
+                            <!-- <span>이미지1</span> -->
+                            <div class="text_area">
+                                <h1 class="text1">바캉스의 시작은<br><span class="er">에브리데이와<br>함께!</span></h1>
+                                <p class="text2">#30%할인<br>#5만원 이상 무료배송<br>#혜자용량</p>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <img src="../assets/img/banner.png">
+                            <!-- <span>이미지2</span> -->
+                            <div class="text_area">
+                                <h1 class="text1">바캉스의 시작은<br><span class="er">에브리데이와<br>함께!</span></h1>
+                                <p class="text2">#30%할인<br>#5만원 이상 무료배송<br>#혜자용량</p>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <img src="../assets/img/banner.png">
+                            <!-- <span>이미지3</span> -->
+                            <div class="text_area">
+                                <h1 class="text1">바캉스의 시작은<br><span class="er">에브리데이와<br>함께!</span></h1>
+                                <p class="text2">#30%할인<br>#5만원 이상 무료배송<br>#혜자용량</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom_area">
+                    <div class="page_view"><span>2/12</span></div>
+                    <a class="page_btn">
+                        <img src="../assets/icon/drawable/icon_more.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 메인 카테고리 -->
+        <nav id="category">
+            <div class="c_container">
+                <div class="cate">
+                    <a class="cate_salad" href="#">
+                        <p>샐러드</p>
+                    </a>
+                    <a class="cate_simple" href="#">
+                        <p>간편식</p>
+                    </a>
+                    <a class="cate_fruit" href="#">
+                        <p>과일</p>
+                    </a>
+                    <a class="cate_rice">
+                        <p>쌀 / 잡곡</p>
+                    </a>
+                    <a class="cate_vegetable" href="#">
+                        <p>채소</p>
+                    </a>
+                    <a class="cate_fish" href="#">
+                        <p>수산</p>
+                    </a>
+                    <a class="cate_dry" href="#">
+                        <p>건견과/건해산</p>
+                    </a>
+                    <a class="cate_meat" href="#">
+                        <p>정육/계란</p>
+                    </a>
+                </div>
+                <div class="more">
+                    <a>더보기(17)</a>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <!-- 섹션1_지금만 할인해요 -->
+        <section class="mpc_section">
+            <header class="mpc_header">
+                <h2 class="mpc_title">지금만 할인해요</h2>
+                <div class="timer">
+                    <span>00 : 09 : 12 남음</span>
+                </div>
+            </header>
+            <article class="mpc_main">
+                <div class="dsp_list">
+                    <ul class="prdt_list">
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <!-- 섹션2_하나 더 드려요 -->
+        <section class="mpc_section">
+            <div class="mpc_header">
+                <h2 class="mpc_title">하나 더 드려요</h2>
+            </div>
+            <div class="mpc_tab_nav">
+                <ul class="mpc_tab_list">
+                    <li class="tab_anc on"><a>과일</a></li>
+                    <li class="tab_anc"><a>채소 / 샐러드</a></li>
+                    <li class="tab_anc"><a>냉장 / 냉동</a></li>
+                    <li class="tab_anc"><a>즉석식품</a></li>
+                    <li class="tab_anc"><a>수산</a></li>
+                    <li class="tab_anc"><a>과일</a></li>
+                    <li class="tab_anc"><a>채소 / 샐러드</a></li>
+                    <li class="tab_anc"><a>냉장 / 냉동</a></li>
+                    <li class="tab_anc"><a>즉석식품</a></li>
+                    <li class="tab_anc"><a>수산</a></li>
+                </ul>
+            </div>
+            <div class="mpc_tab_wrap">
+                <div class="mpc_prod_list_area mpc_tab_cont on">
+                    <div class="dsp_list">
+                        <ul class="prdt_list">
+                            <li class="product">
+                                <div class="p_img">
+                                    <a class="p_basket"></a>
+                                </div>
+                                <div class="list_info">
+                                    <div class="p_explain">당도선별 수박 7kg 미만</div>
+                                    <div class="p_price">4,300 원</div>
+                                </div>
+                            </li>
+                            <li class="product">
+                                <div class="p_img">
+                                    <a class="p_basket"></a>
+                                </div>
+                                <div class="list_info">
+                                    <div class="p_explain">당도선별 수박 7kg 미만</div>
+                                    <div class="p_price">4,300 원</div>
+                                </div>
+                            </li>
+                            <li class="product">
+                                <div class="p_img">
+                                    <a class="p_basket"></a>
+                                </div>
+                                <div class="list_info">
+                                    <div class="p_explain">당도선별 수박 7kg 미만</div>
+                                    <div class="p_price">4,300 원</div>
+                                </div>
+                            </li>
+                            <li class="product">
+                                <div class="p_img">
+                                    <a class="p_basket"></a>
+                                </div>
+                                <div class="list_info">
+                                    <div class="p_explain">당도선별 수박 7kg 미만</div>
+                                    <div class="p_price">4,300 원</div>
+                                </div>
+                            </li>
+                            <li class="product">
+                                <div class="p_img">
+                                    <a class="p_basket"></a>
+                                </div>
+                                <div class="list_info">
+                                    <div class="p_explain">당도선별 수박 7kg 미만</div>
+                                    <div class="p_price">4,300 원</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="mpc_tab_cont">tab02</div>
+                <div class="mpc_tab_cont">tab03</div>
+                <div class="mpc_tab_cont">tab04</div>
+                <div class="mpc_tab_cont">tab05</div>
+            </div>
+        </section>
+        <!-- 섹션3_신선함을 집 앞까지 -->
+        <section class="mpc_section">
+            <div class="mpc_header">
+                <h2 class="mpc_title">신선함을 집 앞까지</h2>
+            </div>
+            <div class="mpc_main">
+                <div class="dsp_list">
+                    <ul class="prdt_list">
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <!-- 섹션4_이 음식을 많이 찾네요 -->
+        <section class="mpc_section section4">
+            <div class="mpc_header">
+                <h2 class="mpc_title">이 음식을 많이 찾네요</h2>
+                <div class="ranking_time">6월 10일 20 : 00 기준</div>
+            </div>
+            <ul class="mpc_acd_list">
+                <li class="rank1">
+                    <div class="list_info">
+                        <div class="rank">1</div>
+                        <div class="name">구운계란</div>
+                        <div class="num"></div>
+                        <div class="num_mark"></div>
+                    </div>
+                </li>
+                <li class="rank2">
+                    <div class="list_info">
+                        <div class="rank">2</div>
+                        <div class="name">고구마 / 감자</div>
+                        <div class="num"></div>
+                        <div class="num_mark">NEW</div>
+                    </div>
+                    <div class="acd_cont">
+                        <div class="dsp_list">
+                            <ul class="prdt_list">
+                                <li class="product">
+                                    <a href="#">
+                                        <div class="p_img">
+                                            <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                                        </div>
+                                        <div class="p_explain">행복한콩 몽글몽글 순두부 기획 350g*2</div>
+                                        <div class="p_price">1,850 <span>원</span></div>
+                                    </a>
+                                </li>
+                                <li class="product">
+                                    <a href="#">
+                                        <div class="p_img">
+                                            <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                                        </div>
+                                        <div class="p_explain">행복한콩 몽글몽글 순두부 기획 350g*2</div>
+                                        <div class="p_price">1,850 <span>원</span></div>
+                                    </a>
+                                </li>
+                                <li class="product">
+                                    <a href="#">
+                                        <div class="p_img">
+                                            <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                                        </div>
+                                        <div class="p_explain">행복한콩 몽글몽글 순두부 기획 350g*2</div>
+                                        <div class="p_price">1,850 <span>원</span></div>
+                                    </a>
+                                </li>
+                                <li class="product">
+                                    <a href="#">
+                                        <div class="p_img">
+                                            <img src="../assets/icon/drawable-xxxhdpi/product1.png">
+                                        </div>
+                                        <div class="p_explain">행복한콩 몽글몽글 순두부 기획 350g*2</div>
+                                        <div class="p_price">1,850 <span>원</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="rank3">
+                    <div class="list_info">
+                        <div class="rank">3</div>
+                        <div class="name">언양불고기 </div>
+                        <div class="num">1</div>
+                        <div class="num_mark" style="background-image: url(../assets/icon/drawable/아이콘-하락.svg);"></div>
+                    </div>
+                </li>
+                <li class="rank4">
+                    <div class="list_info">
+                        <div class="rank">4</div>
+                        <div class="name">미니 돈가스 </div>
+                        <div class="num">7</div>
+                        <div class="num_mark" style="background-image: url(../assets/icon/drawable/아이콘\ 상승.svg);"></div>
+                    </div>
+                </li>
+                <li class="rank5">
+                    <div class="list_info">
+                        <div class="rank">5</div>
+                        <div class="name">수박 </div>
+                        <div class="num">14</div>
+                        <div class="num_mark" style="background-image: url(../assets/icon/drawable/아이콘\ 상승.svg);"></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="mpc_acd_footer">
+                <a class="more">
+                    <p>더보기(17)</p>
+                    <div class="line"></div>
+                </a>
+            </div>
+        </section>
+        <!-- 섹션5_풀무원 기획상품 -->
+        <section class="mpc_section section5">
+            <div class="mpc_header">
+                <h2 class="mpc_title">풀무원 기획상품</h2>
+                <img src="../assets/icon/drawable-xxxhdpi/pulmuone.png" class="pulmuonelogo">
+            </div>
+            <div class="mpc_main">
+                <div class="dsp_list">
+                    <ul class="prdt_list">
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/느리게한모.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/구운란.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/느리게한모.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/느리게한모.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                        <li class="product">
+                            <div class="p_img">
+                                <img src="../assets/icon/drawable-xxxhdpi/느리게한모.png">
+                            </div>
+                            <div class="list_info">
+                                <div class="p_brand">No Brand</div>
+                                <div class="p_explain">노브랜드 스테인레스 이중컵<br>노브랜드 스테인레스 이중컵</div>
+                                <div class="p_price">4,300 <span>원</span></div>
+                            </div>
+                            <div class="p_basket"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 푸터 -->
+    <footer id="footer">
+        <div class="footer_container">
+            <div class="footer_top">
+                <h3>상계점</h3>
+                <div class="contents">
+                    <p>
+                        주소 : 서울 노원구 동일로 1608, 동산빌딩 1F
+                        <br>
+                        영업시간 : 10:00 ~ 22:00
+                        <br>
+                        휴무일 : 5/14, 5/30
+                        <br>
+                        대표번호 : 02-2133-5698
+                    </p>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="logo"></div>
+                <div class="alink">
+                    <a class="notic">공지사항</a>
+                    <a class="guide">이용안내</a>
+                    <a class="service">서비스이용약관</a>
+                    <a class="data">개인정보처리방침</a>
+                </div>
+                <div class="contents">
+                    <p>
+                        (주)이마트애브리데이
+                        <br>
+                        대표 : 김성영
+                        <br>
+                        개인정보보호책임자 : 김맹
+                        <br>
+                        사업자등록번호 : 212-81-25544
+                        <br>
+                        본사 : 서울특별시 성동구 성수일로 56, 8/9/10층
+                        <br>
+                        고객센터 : <span>02 - 380 - 5123</span>
+                        <br>
+                        (입점, 제휴 문의,ecrtemarteveryday.co.kr)
+                    </p>
+                    <a>사업자정보확인</a>
+                </div>
+                <p class="time">평일 09:00 ~ 18:00 공휴일 휴무</p>
+                <div class="copy">
+                    Copyright ⓒ E-MART EVERYDAY inc. ALL Rights Reserved.
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- 하단 액션바/버튼 -->
+    <div class="actioin_menu">
+        <div class="m_container">
+            <ul class="menu_list">
+                <li>
+                    <a href="#">
+                        <img class="icon" src="../assets/icon/drawable/아이콘-카테고리-디폴트.svg"></img>
+                        <span>카테고리</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="../assets/icon/drawable/아이콘-배송-디폴트.svg"></img>
+                        <span>배송</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="../assets/icon/drawable/아이콘-홈-포커스.svg"></img>
+                        <span>홈</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="../assets/icon/drawable/아이콘-결제완료-디폴트.svg"></img>
+                        <span>찜하기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon" src="../assets/icon/drawable/아이콘-마이-디폴트.svg"></img>
+                        <span>MY</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="action_btn">
+                <a class="up_btn">
+                    <img src="../assets/icon/drawable/up_to_top.svg">
+                </a>
+                <button type="button" class="basket_btn" toast-name="toast">
+                    <p>
+                        장바구니
+                        <span class="num">
+                            <span>99</span>
+                        </span>
+                    </p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // 헤더 검색창 액션
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+
+            if (scroll > 0) {
+                $('#header').addClass("fix");
+                $('.header_bottom').addClass("hide");
+                // $('.header_bottom .search').addClass("hide");
+            } else {
+                $('#header').removeClass("fix");
+                $('.header_bottom').removeClass("hide");
+                // $('.header_bottom .search').removeClass("hide");
+            }
+        });
+
+        //메인배너 슬라이드
+        const sliderWrap = $(".slider_wrapper");
+        const sliderImg = $(".slider_img");
+        const slider = $(".slider");
+
+        let currentIndex = 0;
+        let sliderwidth = slider.width();
+        let sliderEaseing = "easeOutQuint"
+
+        setInterval(function () {
+            sliderImg.animate({
+                left: -sliderwidth
+            }, 400, sliderEaseing, function () {
+                $(".slider:first-child").appendTo(sliderImg);
+                sliderImg.css("left", "");
+            })
+        }, 3000)
+
+        //하단 액션바
+        let nowScrollTop;
+        let prevScrollTop = 0;
+
+        $(window).scroll(function () {
+            nowScrollTop = true;
+        });
+
+        setInterval(() => {
+            if (nowScrollTop) {
+                nowScrollTop = false;
+                hasScroll();
+            }
+        }, 300)
+
+        function hasScroll() {
+            let scroll = $(this).scrollTop();
+
+            if (scroll > prevScrollTop) {
+                //스크롤을 내렸을 때를 의미
+                $(".actioin_menu").addClass("hide");
+                $(".up_btn").removeClass("hide");
+            } else {
+                //스크롤을 올렸을 때를 의미
+                $(".actioin_menu").removeClass("hide");
+                $(".up_btn").addClass("hide");
+            }
+
+            prevScrollTop = scroll;
+        };
+
+        // 하나더드려요 탭메뉴
+
+        $(function () {
+            $(document).on("click", '.mpc_tab_list .tab_anc', function (e) {
+                e.preventDefault();
+                var index = $(this).index();
+                $('.mpc_tab_cont').eq(index).addClass("on").siblings().removeClass('on');
+                $(this).addClass('on').siblings().removeClass('on');
+            });
+        })
+    </script>
+</body>
+
+</html>

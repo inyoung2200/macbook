@@ -1,0 +1,149 @@
+#symbol .contents_wrap .container {
+  padding: 34px 14px 0;
+}
+
+#symbol .tit_h3 {
+  margin-top: 34px;
+}
+
+#symbol .define_box {
+  width: 100%;
+  height: max-content;
+  padding: 33px 274px 28px 38px;
+  background: #fff2f2;
+  border-radius: 20px 55px 20px 20px;
+  margin-top: 18px;
+  position: relative;
+}
+
+#symbol .define_box strong {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: -0.4px;
+  color: #3a3a4a;
+}
+
+#symbol .define_box div {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  color: #ee0700;
+  padding-top: 1px;
+}
+
+#symbol .define_box p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  color: #3a3a4a;
+  padding-top: 2px;
+}
+
+#symbol .define_box img {
+  width: 216px;
+  height: 214px;
+  position: absolute;
+  right: 2%;
+  top: 8%;
+}
+
+#symbol .logotype_wrap {
+  width: 100%;
+  display: flex;
+  padding-top: 18px;
+}
+
+#symbol .logotype_wrap>div {
+  width: 33.33%;
+  height: 250px;
+  border: 1px solid #e1e3e6;
+  border-radius: 20px 20px 20px 55px;
+  margin-left: 28px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  padding: 43px 26px 54px;
+}
+
+#symbol .logotype_wrap>div>p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.32px;
+  color: #6c6d73;
+
+}
+
+#symbol .logotype_wrap>div>img {
+  width: 100%;
+  height: auto;
+
+}
+
+#symbol .logotype_wrap .typebox1 {
+  margin-left: 0;
+}
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+  #symbol .define_box {
+    padding: 28px 24px;
+  }
+
+  #symbol .define_box strong {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+  }
+
+  #symbol .define_box div {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+    padding-top: 3px;
+  }
+
+  #symbol .define_box p {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.26px;
+    padding-top: 6px;
+  }
+
+  #symbol .define_box img {
+    display: none;
+  }
+
+  #symbol .logotype_wrap {
+    display: block;
+    padding-top: 0;
+  }
+
+  #symbol .logotype_wrap>div {
+    width: 100%;
+    height: 220px;
+    margin-left: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #symbol .logotype_wrap>div>p {
+    width: 220px;
+  }
+
+  #symbol .logotype_wrap>div>img {
+    width: 220px;
+    height: 120px;
+  }
+}

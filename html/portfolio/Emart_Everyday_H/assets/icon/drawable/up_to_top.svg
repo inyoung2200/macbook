@@ -1,0 +1,11 @@
+<svg id="up-to-top" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#000}
+        </style>
+    </defs>
+    <path id="_Transparent_Rectangle_" style="fill:none" d="M0 0h24v24H0z"/>
+    <path id="선_53" data-name="선 53" class="cls-2" transform="translate(4 6)" d="M0 0h16"/>
+    <path id="선_54" data-name="선 54" class="cls-2" transform="translate(4 11)" d="M8 0 0 8"/>
+    <path id="선_55" data-name="선 55" class="cls-2" transform="translate(12 11)" d="M8 8 0 0"/>
+</svg>

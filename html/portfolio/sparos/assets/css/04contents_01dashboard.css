@@ -1,0 +1,592 @@
+#dashboard {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "sidebar footer";
+    grid-auto-columns: 260px auto;
+    grid-auto-rows: 66px auto 249px;
+}
+
+#dashboard .com_acomenu {
+    height: unset;
+}
+
+.main {
+    grid-area: content;
+}
+
+.main_wrap {}
+
+.section_wrap {}
+
+.section_container {
+    padding: 0 44px 101px;
+}
+
+.tab_cont {
+    display: unset;
+}
+
+.tab_cont1 {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "ggg ggg ggg ggg ggg ggg"
+        "ccc ccc ccc ddd ddd ddd"
+        "eee eee eee fff fff fff";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 322px);
+    grid-gap: 22px;
+    margin-top: 22px;
+}
+
+#dashboard .tab_cont1.on {
+    display: grid;
+}
+
+.grid_top {
+    grid-area: ggg;
+    display: grid;
+    grid-template-areas:
+        "aaa bbb bbb";
+    grid-auto-columns: minmax(400px, 1fr) 1fr 1fr;
+    grid-template-rows: 322px;
+    grid-gap: 22px;
+}
+
+.box1_cloudCost {
+    grid-area: aaa;
+}
+
+.box1_cloudCost .box1_container {}
+
+.box1_cloudCost .box1_container .box1_top {
+    height: 200px;
+    background: #e25539;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 36px 30px 18px 30px;
+    position: relative;
+
+}
+
+.box1_cloudCost .box1_container .box1_top .floor1 {
+    display: flex;
+
+}
+
+.box1_cloudCost .box1_container .box1_top .floor2 {
+    padding-top: 34px;
+
+}
+
+.box1_cloudCost .box1_container .box1_top .floor1 h3 {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 1.125em;
+    color: #fff;
+
+}
+
+.box1_cloudCost .box1_container .box1_top .floor1 p {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 0.875em;
+    color: #f9e0d7;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+.box1_cloudCost .box1_container .box1_top .floor2 .month {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 36px;
+    color: #fff;
+}
+
+.box1_cloudCost .box1_container .box1_top .floor2 .price {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 36px;
+    color: #fff;
+    position: absolute;
+    top: 88px;
+    right: 30px;
+}
+
+.box1_cloudCost .box1_container .box1_top .floor2 .price span {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 24px;
+}
+
+.box1_cloudCost .box1_container .box1_top .floor2 .price span {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 24px;
+    padding-left: 8px;
+}
+
+.box1_cloudCost .box1_container .box1_top .line {
+    width: 100%;
+    height: 1px;
+    background-color: #e77c61;
+    margin-top: 18px;
+}
+
+.box1_cloudCost .box1_container .box1_top .floor3 {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.box1_cloudCost .box1_container .box1_top .floor3 p {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 14px;
+    color: #fff;
+}
+
+.box1_cloudCost .box1_container .box1_top .floor3 p span {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 22px;
+    color: #fcff00;
+    margin-left: 8px;
+}
+
+.box1_cloudCost .box1_container .box1_bottom {
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.box1_cloudCost .box1_container .box1_bottom .box1_bottom_con {
+    padding: 26px 30px;
+}
+
+.box1_cloudCost .box1_container .box1_bottom .box1_bottom_con .floor {
+    display: flex;
+    line-height: 24px;
+    position: relative;
+}
+
+.box1_cloudCost .box1_container .box1_bottom .box1_bottom_con .floor p {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 14px;
+    color: #777;
+}
+
+.box1_cloudCost .box1_container .box1_bottom .box1_bottom_con .floor div {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 14px;
+    color: #333;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+.box2_notice {
+    width: 100%;
+    grid-area: bbb;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.box2_notice .box2_container {
+    padding: 34px 30px 28px 30px;
+}
+
+.box2_notice .box2_container .box_tit {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 18px;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+.box2_notice .box2_container .box_tit::after {
+    width: 100%;
+    height: 1px;
+    background: #e2e2e2;
+}
+
+
+.box2_notice .box2_container .line {
+    width: 100%;
+    height: 1px;
+    background: #e2e2e2;
+    display: block;
+}
+
+.box2_notice .box2_container .box_cont {
+    padding-top: 18px;
+}
+
+.box2_notice .box2_container .box_cont ul {
+    display: block;
+    justify-content: unset;
+
+}
+
+.box2_notice .box2_container .box_cont ul li {
+    width: 100%;
+    display: flex;
+    position: relative;
+    line-height: 30px;
+    justify-content: space-between;
+
+}
+
+.box2_notice .box2_container .box_cont ul li a {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 15px;
+    color: #333;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box2_notice .box2_container .box_cont ul li p {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 14px;
+    color: #999;
+    white-space: nowrap;
+}
+
+
+
+
+.box3_graph1 {
+    grid-area: ccc;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.graph_wrap {
+    padding: 34px 30px 60px 30px;
+}
+
+.graph_wrap .graph_tit {
+    display: flex;
+}
+
+.graph_wrap .graph_tit h3 {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 18px;
+    color: #333;
+    padding-right: 12px;
+}
+
+.graph_wrap .graph_tit p {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 14px;
+    color: #777;
+    transform: translateY(3px);
+}
+
+.graph_wrap .graph_cont {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.graph_wrap .graph_cont .graph_img {
+    width: 180px;
+    height: 180px;
+    background: url(../icon/img_circle\ graph@2x.png);
+    background-size: cover;
+}
+
+.box6_graph4 .graph_wrap .graph_cont .graph_img {
+    width: 180px;
+    height: 180px;
+    background: url(../icon/img_circle\ graph2@2x.png);
+    background-size: cover;
+}
+
+.graph_wrap .graph_cont .graph_list {}
+
+.graph_wrap .graph_cont .graph_list li {
+    display: flex;
+    line-height: 2;
+    align-items: center;
+}
+
+.graph_wrap .graph_cont .graph_list li:first-child {
+    margin-top: 0;
+}
+
+.graph_wrap .graph_cont .graph_list li span {
+    width: 10px;
+    height: 10px;
+    background-color: #ed7e3b;
+    border-radius: 100%;
+    display: block;
+    margin-right: 8px;
+}
+
+.graph_wrap .graph_cont .graph_list li:nth-child(2) span {
+    width: 10px;
+    height: 10px;
+    background-color: #eda13f;
+    border-radius: 100%;
+    display: block;
+}
+
+.graph_wrap .graph_cont .graph_list li:nth-child(3) span {
+    width: 10px;
+    height: 10px;
+    background-color: #efc930;
+    border-radius: 100%;
+    display: block;
+}
+
+.graph_wrap .graph_cont .graph_list li:nth-child(4) span {
+    width: 10px;
+    height: 10px;
+    background-color: #f5eda7;
+    border-radius: 100%;
+    display: block;
+}
+
+.graph_wrap .graph_cont .graph_list li:nth-child(5) span {
+    width: 10px;
+    height: 10px;
+    background-color: #eff2d2;
+    border-radius: 100%;
+    display: block;
+}
+
+.graph_wrap .graph_cont .graph_list li:nth-child(6) span {
+    width: 10px;
+    height: 10px;
+    background-color: #f0aa7f;
+    border-radius: 100%;
+    display: block;
+}
+
+.graph_wrap .graph_cont .graph_list li p {
+    width: 12.3438vw;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+
+.box4_graph2 {
+    grid-area: ddd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.box5_graph3 {
+    grid-area: eee;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.box6_graph4 {
+    grid-area: fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+@media (max-width: 1500px) {
+    .tab_cont1 {
+        grid-template-rows: 322px 458px 458px;
+    }
+
+    .graph_wrap {
+        padding: 24px 20px;
+    }
+
+    .graph_wrap .graph_tit {
+        display: block;
+        font-size: 16px;
+    }
+
+    .graph_wrap .graph_tit p {
+        font-family: 'SpoqaHanSansNeo-Medium';
+        font-size: 12px;
+    }
+
+    .graph_wrap .graph_cont {
+        width: 100%;
+        display: block;
+    }
+
+    .graph_wrap .graph_cont .graph_img {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+    .box6_graph4 .graph_wrap .graph_cont .graph_img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .graph_wrap .graph_cont .graph_list {
+        padding-top: 30px;
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .graph_wrap .graph_cont .graph_list li {
+        line-height: 1.8;
+    }
+
+    .graph_wrap .graph_cont .graph_list li p {
+        width: auto;
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    #dashboard {
+        display: block;
+    }
+
+    #dashboard .com_acomenu {
+        height: -webkit-fill-available;
+        z-index: 100;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #dashboard .tab_cont1.on {
+        display: block;
+    }
+
+    .grid_top {
+        display: block;
+    }
+
+    .box1_cloudCost .box1_container .box1_top {
+        height: 189px;
+        padding: 24px 16px 20px 16px;
+    }
+
+    .box1_cloudCost .box1_container .box1_top .floor1 h3 {
+        font-size: 16px;
+    }
+
+    .box1_cloudCost .box1_container .box1_top .floor1 p {
+        font-size: 12px;
+        top: 28px;
+        right: 20px;
+    }
+
+    .box1_cloudCost .box1_container .box1_top .floor2 {
+        padding-top: 28px;
+    }
+
+    .box1_cloudCost .box1_container .box1_top .floor2 .month {
+        font-size: 22px;
+    }
+
+    .box1_cloudCost .box1_container .box1_top .floor2 .price {
+        font-size: 24px;
+        top: 96px;
+        right: 20px;
+    }
+
+    .box1_cloudCost .box1_container .box1_top .floor2 .price span {
+        font-size: 14px;
+    }
+
+    .box1_cloudCost .box1_container .box1_top .line {
+        margin-top: 48px;
+    }
+    .box1_cloudCost .box1_container .box1_top .floor3 {
+        justify-content: left;
+        position: relative;
+    }
+
+    .box1_cloudCost .box1_container .box1_top .floor3 p {
+        font-size: 13px;
+        margin-top: 2px;
+    }
+
+    .box1_cloudCost .box1_container .box1_top .floor3 p span {
+        font-size: 18px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .box1_cloudCost .box1_container .box1_bottom .box1_bottom_con .floor p {
+        font-size: 13px;
+    }
+
+    .box1_cloudCost .box1_container .box1_bottom .box1_bottom_con .floor div {
+        font-size: 13px;
+    }
+
+    .box2_notice {
+        margin-top: 18px;
+    }
+
+    .box2_notice .box2_container {
+        padding: 24px 20px;
+    }
+
+    .box2_notice .box2_container .box_tit {
+        font-size: 16px;
+    }
+
+    .box2_notice .box2_container .box_cont {
+        padding-top: 16px;
+    }
+
+    .box2_notice .box2_container .box_cont ul li {
+        line-height: 24px;
+    }
+
+    .box2_notice .box2_container .box_cont ul li a {
+        font-family: 'SpoqaHanSansNeo-Regular';
+        font-size: 12px;
+        margin-right: 26px;
+    }
+
+    .box2_notice .box2_container .box_cont ul li p {
+        font-size: 12px;
+    }
+
+    .box3_graph1 {
+        margin-top: 18px;
+    }
+
+    .graph_wrap .graph_tit h3 {
+        font-size: 16px;
+    }
+
+    .box4_graph2 {
+        margin-top: 18px;
+    }
+
+    .box5_graph3 {
+        margin-top: 18px;
+    }
+
+    .box6_graph4 {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width:390px){
+    .graph_wrap .graph_cont .graph_img {
+        width: 45vw;
+        height: 45vw;
+    }
+    .graph_wrap .graph_cont .graph_list {
+        width: inherit;
+    }
+}

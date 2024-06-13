@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04contents_02analysis_02Balance</title>
+
+    <!-- css -->
+    <link href="../assets/css/04contents_02analysis_02Balance.css" rel="stylesheet">
+    <link href="../assets/css/common.css" rel="stylesheet">
+    <link href="../assets/css/common_header.css" rel="stylesheet">
+    <link href="../assets/css/common_accordion_menu.css" rel="stylesheet">
+    <link href="../assets/css/common_tabmenu.css" rel="stylesheet">
+    <link href="../assets/css/comm_cont_title1.css" rel="stylesheet">
+    <link href="../assets/css/common_footer.css" rel="stylesheet">
+    <link href="../assets/css/reset.css" rel="stylesheet">
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="Balance">
+
+        <!-- 헤더 -->
+        <header class="com_header">
+            <div class="com_header_wrap">
+                <div class="com_header_cont">
+                    <div class="left">
+                        <div class="cont_ico_menu"></div>
+                        <a class="cont_ico_logo" href="./04contents_01dashboard.html"></a>
+                        <div class="cont_ico_help"></div>
+                        <div class="cont_ico_notice"></div>
+                        <div class="cont_text_notice">
+                            <p>부가서비스 정책 일부 변경안내
+                                <span>2020.05.04</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="cont_box_my">
+                            <div class="ico_profile"></div>
+                            <p class="text_myname">홍길동 님</p>
+                            <a class="icon_arrow_b"></a>
+                        </div>
+                        <a class="cont_ico_logout"></a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+        <!-- 아코디언 메뉴 -->
+        <nav class="com_acomenu">
+            <div class="com_acomenu_wrap">
+                <div class="com_acomenu_header">
+                    <div class="ico_close"></div>
+                    <div class="name">홍길동 님</div>
+                    <div class="ico_notice"></div>
+                </div>
+                <ul class="com_acomenu_list">
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_dashboard.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">대시보드</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_costanalysis.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">비용분석</div>
+                            <img class="ico_down" src="../assets/icon/Color Overlay@3x.png">
+                            <img class="ico_down_on" src="../assets/icon/Color Overlay@3x.png" no-repeat center center>
+                        </a>
+                        <ul class="acomenu_subject">
+                            <li>
+                                <a class="acomenu_cont" href="./04contents_02analysis_01customerService.html">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 서비스 비용</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="./04contents_02analysis_02Balance.html">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 잔액(선급금) 조회</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 Sport 인스턴스 추천관리</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont sport" href="./04contents_02analysis_04spotInstance.html">
+                                    <div class="acomenu_cont_wrap sport">
+                                        <p class="pc_sport">Sport instance Recommentdation Mgt by Customer</p>
+                                        <p class="mobile_sport">SportInstance Recommentdation Mgt by Customer</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_optimization.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">비용최적화</div>
+                            <img class="ico_down" src="../assets/icon/Color Overlay@3x.png">
+                            <img class="ico_down_on" src="../assets/icon/Color Overlay@3x.png" no-repeat center center>
+                        </a>
+                        <ul class="acomenu_subject">
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 서비스 비용</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 잔액(선급금) 조회</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 Sport 인스턴스 추천관리</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont sport" href="#">
+                                    <div class="acomenu_cont_wrap sport">
+                                        <p class="pc_sport">Sport instance Recommentdation Mgt by Customer</p>
+                                        <p class="mobile_sport">SportInstance Recommentdation Mgt by Customer</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_claim.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">정산/청구관리</div>
+                            <img class="ico_down" src="../assets/icon/Color Overlay@3x.png">
+                            <img class="ico_down_on" src="../assets/icon/Color Overlay@3x.png" no-repeat center center>
+                        </a>
+                        <ul class="acomenu_subject">
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 서비스 비용</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 잔액(선급금) 조회</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 Sport 인스턴스 추천관리</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont sport" href="#">
+                                    <div class="acomenu_cont_wrap sport">
+                                        <p class="pc_sport">Sport instance Recommentdation Mgt by Customer</p>
+                                        <p class="mobile_sport">SportInstance Recommentdation Mgt by Customer</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_credit.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">크래딧 관리</div>
+                            <img class="ico_down" src="../assets/icon/Color Overlay@3x.png">
+                            <img class="ico_down_on" src="../assets/icon/Color Overlay@3x.png" no-repeat center center>
+                        </a>
+                        <ul class="acomenu_subject">
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 서비스 비용</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 잔액(선급금) 조회</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont" href="#">
+                                    <div class="acomenu_cont_wrap">
+                                        <p>고객사별 Sport 인스턴스 추천관리</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="acomenu_cont sport" href="#">
+                                    <div class="acomenu_cont_wrap sport">
+                                        <p class="pc_sport">Sport instance Recommentdation Mgt by Customer</p>
+                                        <p class="mobile_sport">SportInstance Recommentdation Mgt by Customer</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_sales.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">매입/매출관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_resource.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">자원현황</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_desk@3x.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">서비스데스크</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_monitoring.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">모니터링</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_management.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">정보관리</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="acomenu_tit" href="#">
+                            <img class="ico_tit" src="../assets/icon/icon_support.png" no-repeat center center>
+                            <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                                center>
+                            <div class="text_tit">고객지원</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <!-- 메인 -->
+        <main class="main">
+            <div class="main_container">
+                <div class="comm_cont_header">
+                    <div class="comm_cont_header_tit">고객사별 잔액(선급금) 조회</div>
+                </div>
+                <section class="secion_wrap">
+                    <div class="section_container">
+                        <div class="com_tabmenu">
+                            <ul class="tab_list">
+                                <li class="tab_anc on"><a>월별</a></li>
+                                <li class="tab_anc"><a>년별</a></li>
+                            </ul>
+                        </div>
+                        <ul class="tab_cont">
+                            <li class="tab_cont1 on">
+                                <div class="cont_wrap">
+                                    <div class="cont_container">
+                                        <div class="cont_header">
+                                            <div class="coment">검색 월 기준 최대 12개월 확인 가능합니다.</div>
+                                            <div class="selectbox_wrap">
+                                                <select name="선택" class="selectbox">
+                                                    <option value="선택" selected="selected" class="selectbox_cont">(주)신세계
+                                                    </option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                                <select name="선택" class="selectbox">
+                                                    <option value="선택" selected="selected" class="selectbox_cont">eDM
+                                                    </option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                                <select name="선택" class="selectbox">
+                                                    <option value="선택" selected="selected" class="selectbox_cont">2021년
+                                                    </option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                                <select name="선택" class="selectbox">
+                                                    <option value="선택" selected="selected" class="selectbox_cont">7월
+                                                    </option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                                <div class="btn_area">
+                                                    <button class="lookup_btn">조회</button>
+                                                    <button class="initialization_btn">초기화</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cont_main">
+
+                                            <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="box_wrap">
+                                                            <div class="box left a">
+                                                                <div class="box_container">
+                                                                    <div class="box_top">
+                                                                        <div class="top">
+                                                                            <div class="tit">7월 청구요약</div>
+                                                                            <div class="date">2021-07-01 ~
+                                                                                2021-07-31</div>
+                                                                        </div>
+                                                                        <div class="price">5,259,200<span>원</span>
+                                                                        </div>
+                                                                        <div></div>
+                                                                    </div>
+                                                                    <div class="box_bottom">
+                                                                        <div class="floor1">
+                                                                            <p>전월대비</p>
+                                                                            <div>▲ 500,000 원 (▲ 2.5%)</div>
+                                                                        </div>
+                                                                        <div class="floor2">
+                                                                            <div class="left">
+                                                                                · AWS 이용료<br>
+                                                                                · MSP 요금<br>
+                                                                                · 부가서비스<br>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                5,000,000 원<br>
+                                                                                250,000 원<br>
+                                                                                9,200 원<br>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="floor3">
+                                                                            <div class="left">※ VAT별도</div>
+                                                                            <div class="right">[웹방화벽 서비스 ...외 1건]
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="box right b">
+                                                                <div class="box_container">
+                                                                    <div class="box_top">
+                                                                        <div class="top">
+                                                                            <div class="tit">8월 청구요약</div>
+                                                                            <div class="date">2021-08-01 ~
+                                                                                2021-08-31</div>
+                                                                        </div>
+                                                                        <div class="price">0<span>원</span>
+                                                                        </div>
+                                                                        <div></div>
+                                                                    </div>
+                                                                    <div class="box_bottom">
+                                                                        <div class="floor1">
+                                                                            <p>전월대비</p>
+                                                                            <div style="color: #777;">전월 없음</div>
+                                                                        </div>
+                                                                        <div class="floor2">
+                                                                            <div class="left">
+                                                                                · AWS 이용료<br>
+                                                                                · MSP 요금<br>
+                                                                                · 부가서비스<br>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                0 원<br>
+                                                                                0 원<br>
+                                                                                0 원<br>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="floor3">
+                                                                            <div class="left">※ VAT별도</div>
+                                                                            <div class="right">[-]</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="swiper-slide moblie">
+                                                        <div class="box_wrap">
+                                                            <div class="box right moblie">
+                                                                <div class="box_container">
+                                                                    <div class="box_top">
+                                                                        <div class="top">
+                                                                            <div class="tit">8월 청구요약</div>
+                                                                            <div class="date">2021-08-01 ~
+                                                                                2021-08-31</div>
+                                                                        </div>
+                                                                        <div class="price">0<span>원</span>
+                                                                        </div>
+                                                                        <div></div>
+                                                                    </div>
+                                                                    <div class="box_bottom">
+                                                                        <div class="floor1">
+                                                                            <p>전월대비</p>
+                                                                            <div style="color: #777;">전월 없음</div>
+                                                                        </div>
+                                                                        <div class="floor2">
+                                                                            <div class="left">
+                                                                                · AWS 이용료<br>
+                                                                                · MSP 요금<br>
+                                                                                · 부가서비스<br>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                0 원<br>
+                                                                                0 원<br>
+                                                                                0 원<br>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="floor3">
+                                                                            <div class="left">※ VAT별도</div>
+                                                                            <div class="right">[-]</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="swiper-slide moblie">
+                                                        <div class="box_wrap">
+                                                            <div class="box right moblie">
+                                                                <div class="box_container">
+                                                                    <div class="box_top">
+                                                                        <div class="top">
+                                                                            <div class="tit">9월 청구요약</div>
+                                                                            <div class="date">2021-09-01 ~
+                                                                                2021-09-31</div>
+                                                                        </div>
+                                                                        <div class="price">0<span>원</span>
+                                                                        </div>
+                                                                        <div></div>
+                                                                    </div>
+                                                                    <div class="box_bottom">
+                                                                        <div class="floor1">
+                                                                            <p>전월대비</p>
+                                                                            <div style="color: #777;">전월 없음</div>
+                                                                        </div>
+                                                                        <div class="floor2">
+                                                                            <div class="left">
+                                                                                · AWS 이용료<br>
+                                                                                · MSP 요금<br>
+                                                                                · 부가서비스<br>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                0 원<br>
+                                                                                0 원<br>
+                                                                                0 원<br>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="floor3">
+                                                                            <div class="left">※ VAT별도</div>
+                                                                            <div class="right">[-]
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="swiper-slide">
+                                                        <div class="box_wrap">
+                                                            <div class="box right c">
+                                                                <div class="box_container">
+                                                                    <div class="box_top">
+                                                                        <div class="top">
+                                                                            <div class="tit">9월 청구요약</div>
+                                                                            <div class="date">2021-09-01 ~
+                                                                                2021-09-31</div>
+                                                                        </div>
+                                                                        <div class="price">0<span>원</span>
+                                                                        </div>
+                                                                        <div></div>
+                                                                    </div>
+                                                                    <div class="box_bottom">
+                                                                        <div class="floor1">
+                                                                            <p>전월대비</p>
+                                                                            <div style="color: #777;">전월 없음</div>
+                                                                        </div>
+                                                                        <div class="floor2">
+                                                                            <div class="left">
+                                                                                · AWS 이용료<br>
+                                                                                · MSP 요금<br>
+                                                                                · 부가서비스<br>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                0 원<br>
+                                                                                0 원<br>
+                                                                                0 원<br>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="floor3">
+                                                                            <div class="left">※ VAT별도</div>
+                                                                            <div class="right">[-]
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="box right d">
+                                                                <div class="box_container">
+                                                                    <div class="box_top">
+                                                                        <div class="top">
+                                                                            <div class="tit">10월 청구요약</div>
+                                                                            <div class="date">2021-10-01 ~
+                                                                                2021-10-31</div>
+                                                                        </div>
+                                                                        <div class="price">0<span>원</span>
+                                                                        </div>
+                                                                        <div></div>
+                                                                    </div>
+                                                                    <div class="box_bottom">
+                                                                        <div class="floor1">
+                                                                            <p>전월대비</p>
+                                                                            <div style="color: #777;">전월 없음</div>
+                                                                        </div>
+                                                                        <div class="floor2">
+                                                                            <div class="left">
+                                                                                · AWS 이용료<br>
+                                                                                · MSP 요금<br>
+                                                                                · 부가서비스<br>
+                                                                            </div>
+                                                                            <div class="right">
+                                                                                0 원<br>
+                                                                                0 원<br>
+                                                                                0 원<br>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="floor3">
+                                                                            <div class="left">※ VAT별도</div>
+                                                                            <div class="right">[-]</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- navigation buttons -->
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="tab_cont2">tab02</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+
+        <!-- 푸터 -->
+    <footer class="com_footer">
+        <div class="footer_wrap">
+            <div class="footer_container">
+                <div class="text_left">
+                    (주)신세계아이앤씨 대표이사 김장욱<br>
+                    서울특별시 중구 소공로 48 우리금융남산타워 10층<br>
+                    Copyright ⓒ E-MART EVERYDAY inc. ALL Rights Reserved<br>
+                </div>
+                <div class="text_right">
+                    <span><strong>개인정보 처리 방침</strong></span>
+                    <p>
+                        고객센터 1566-1233<br>
+                    운영시간 평일 09:00 ~ 18:00
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <script>
+        // 아코디언 슬라이드 
+        $('.acomenu_tit').on('click', function () {
+
+            if ($(this).hasClass('on')) {
+                slideUp();
+            } else {
+                slideUp();
+                $(this).addClass('on').next().slideDown();
+            }
+
+            function slideUp() {
+                $('.acomenu_tit').removeClass('on').next().slideUp();
+            };
+        });
+
+        // 아코디언 메뉴 클릭시 효과
+        $('.acomenu_cont_wrap').on('click', function () {
+
+            if ($(this).hasClass('on')) {
+                active();
+            } else {
+                active();
+                $(this).addClass('on');
+            }
+
+            function active() {
+                $('.acomenu_cont_wrap').removeClass("on");
+            };
+        });
+
+        // 메뉴 클릭시 아코디언메뉴 등장/ x 클릭시 사라지게
+        $('.cont_ico_menu').click(function () {
+            $('.com_acomenu').css("left", "0");
+        });
+        $('.ico_close').click(function () {
+            $('.com_acomenu').css("left", "-220px");
+        });
+
+        // 탭메뉴
+        $(function () {
+            $(document).on("click", '.tab_list .tab_anc', function (e) {
+                e.preventDefault();
+                var index = $(this).index();
+                $('.tab_cont li').eq(index).addClass("on").siblings().removeClass('on');
+                $(this).addClass('on').siblings().removeClass('on');
+            });
+        })
+
+        // 슬라이드
+        const sliderWrap = $(".slider_wrap"),
+            sliderImg = $(".slider_cont"),
+            slider = $(".slider"),
+            sliderBtn = $(".slider_btn"),
+            sliderDot = $(".slider-dot");
+
+        let sliderCount = slider.length; //이미지 개수 구하기
+        let sliderWidth = slider.width(); //이미지 가로값 구하기
+        let sliderTotalWidth = slider.width() * sliderCount; //이미지 전체 가로값
+        let currentIndex = 0;
+        let dotIndex = "";
+
+        // sliderImg.css({width: sliderTotalWidth});
+        // slider.css({width: sliderWidth});
+
+        //이미지 움직이기
+        function gotoSlider(num) {
+            sliderImg.animate({
+                left: -sliderWidth * num
+            }, 400) //num이라는 매개변수를 사용해서 움직이게 작업
+            currentIndex = num;
+        }
+
+        //버튼 클릭하기
+        sliderBtn.on("click", "a", function (e) {
+            e.preventDefault();
+            let nextIndex = (currentIndex + 1) % sliderCount;
+            let prevIndex = (currentIndex - 1) % sliderCount;
+            if (currentIndex == 0) prevIndex = sliderCount - 1;
+
+            if ($(this).hasClass("prev")) {
+                //왼쪽 버튼 클릭
+                gotoSlider(prevIndex); //함수를 실행시킬때 매개변수가 실행됨 왼쪽 오른쪽이 나눠짐
+            } else {
+                //오른쪽 버튼 클릭
+                gotoSlider(nextIndex);
+            }
+        })
+
+
+
+
+
+
+
+        var mySwiper = new Swiper('.swiper-container', {
+            // 슬라이드를 버튼으로 움직일 수 있습니다.
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+    </script>
+</body>
+
+</html>

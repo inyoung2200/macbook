@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>01login</title>
+
+    <!-- css -->
+    <link href="../assets/css/01login.css" rel="stylesheet">
+    <link href="../assets/css/common.css" rel="stylesheet">
+    <link href="../assets/css/reset.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="login_header">
+        <div class="com_header_tit">
+            <h1>
+                CMP Office
+                <br>
+                퍼블릭 클라우드 관리시스템
+            </h1>
+        </div>
+    </header>
+
+    <!-- 메인 -->
+    <main class="login_wrap">
+        <div class="com_inputbox">
+            <input class="input_text" type="text" placeholder="아이디"></input>
+            <input class="input_text" type="text" placeholder="비밀번호"></input>
+            <div class="keep_chek">
+                <input class="input_chek" id="keep" type="checkbox" value="off"></input>
+                <label for="keep" class="keep_text">아이디 저장</label>
+                <a class="passwordReset" href="#">비밀번호 재설정</a>
+            </div>
+        </div>
+        <div class="com_btn1_wrap">
+            <button class="com_btn1" type="submit">
+                <span class="btn_text">로그인</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="login_footer">
+        <div class="contour">
+            <div class="line"></div>
+        </div>
+
+        <div class="footer_text">
+            <ul>
+                <li>자리를 비우는 경우, 반드시 로그아웃 하시기 바랍니다.</li>
+                <li>개인정보 보호를 위해 30분 동안 화면 이동이 없을 경우 자동 로그아웃 되며. 비밀번호는 3개월마다 변경하시기 바랍니다.</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

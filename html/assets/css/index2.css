@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Coda', sans-serif;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background: #4AE823;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offsetTop {
+  position: fixed;
+  bottom: 20px;
+  left: 80px;
+  width: 50px;
+  height: 50px;
+  background: #4AE823;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 헤더 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.777vw;
+  /* color: #FFFF50; */
+  color: #4AE823;
+  transition: 0.8s;
+}
+
+header.hide {
+  top: -110px;
+  transition: 0.8s;
+}
+
+header.shadow {
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+header .header_container {
+  display: flex;
+  align-items: center;
+}
+
+header .header_container .right {
+  display: flex;
+  align-items: center;
+}
+
+header .header_container .logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+header .header_container .menu {
+  font-size: 22px;
+  margin: 0 auto;
+}
+
+header .header_container .menu a {
+  margin-left: 20px;
+}
+
+header .header_container .menu a:first-child {
+  margin-left: 0px;
+}
+
+header .header_container .right {
+  width: 188.63px;
+  font-size: 22px;
+  text-align: right;
+  display: contents;
+}
+
+header .header_container .right .acomenu_list  {
+  width: 100px;
+  height: 50px;
+  background: #4AE823;
+  text-align: center;
+}
+
+header .header_container .right .acomenu_list .acomenu_tit {
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+
+header .header_container .right .acomenu_list .acomenu_subject {
+  display: none;
+  width: 100px;
+  height: 203px;
+  background: #4AE823;
+  margin-top: -1px;
+  text-transform: uppercase;
+}
+
+header .header_container .right .acomenu_list .acomenu_subject .acomenu_cont {
+  text-decoration-line: none;
+  
+}
+
+header .header_container .right .acomenu_list .acomenu_subject .acomenu_cont .acomenu_cont_wrap {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000;
+  
+}
+
+header .header_container .right .darkMode {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  font-size: 22px;
+  font-weight: bold;
+  color: #4AE823;
+  border: 0px;
+}
+
+header .header_container .right .darkMode span {
+  font-weight: bold;
+  color: #4AE823;
+}
+
+
+/* 메인 */
+main {
+  width: 100%;
+}
+
+main .main_container {
+}
+
+
+main .main_container .main_tit {
+    height: 170vh;
+    background: url(../img/jene-stephaniuk-wsVOc34cQ_Q-unsplash.jpg);
+    background-size: cover;
+    transition: 0.3s;
+}
+
+main .main_container .main_tit h1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 150px;
+    color: #4AE823;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+/* 어바웃 */
+.about_wrap {
+  width: 100%;
+  height: 100vh;
+  /* background: #00623b; */
+}
+.about_wrap .about_container {}
+.about_wrap .about_container .tit {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+.about_wrap .about_container .tit h3 {
+  font-size: 80px;
+  color: #4AE823;
+}
+
+
+/* work */
+.work_wrap {
+  width: 100%;
+  height: 100vh;
+  background: #00623b;
+}
+.work_wrap .work_container {}
+.work_wrap .work_container .tit {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+.work_wrap .work_container .tit h3 {
+  font-size: 80px;
+  color: #4AE823;
+}
+
+.work_wrap .work_container .work_contents {
+  text-align: center;
+}
+.work_wrap .work_container .work_contents .content {
+  display: inline-block;
+  margin: 40px;
+}
+.work_wrap .work_container .work_contents .content a {}
+.work_wrap .work_container .work_contents .content a img {
+  width: 200px;
+}
+.work_wrap .work_container .work_contents .content a p {
+  font-size: 24px;
+  text-align: center;
+}
+
+
+
+/* 다크모드 */
+.dark_mode .scrollTop {
+  background: #e89023;
+}
+
+.dark_mode main .main_container .main_tit{
+  background: url(../img/darkmode.jpg);
+  background-size: cover;
+}
+
+.dark_mode main .main_container .main_tit h1 {
+  color: #e89023;
+}
+
+.dark_mode header {
+  color: #e89023;
+}
+
+.dark_mode header .header_container .right .acomenu_list {
+  background: #111;
+}
+
+.dark_mode header .header_container .right .acomenu_list .acomenu_tit {
+  color: #e89023;
+}
+
+.dark_mode header .header_container .right .acomenu_list .acomenu_subject {
+  background: #111;
+  
+}
+
+.dark_mode header .header_container .right .acomenu_list .acomenu_subject .acomenu_cont .acomenu_cont_wrap {
+  color: #e89023;
+}
+
+.dark_mode header .header_container .right .darkMode {
+  color: #000;
+  background: #e89023;
+}
+
+.dark_mode .about_wrap {
+  background: #000;
+}
+
+.dark_mode .about_wrap .about_container .tit h3 {
+  color: #e89023;
+}
+
+.dark_mode .work_wrap .work_container .tit h3 {
+  color: #e89023;
+}

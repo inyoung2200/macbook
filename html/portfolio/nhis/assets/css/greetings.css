@@ -1,0 +1,84 @@
+#greetings .contents_wrap {
+  position: relative;
+  border-bottom: 1px solid #3a3a4a;
+}
+#greetings .contents_wrap .container {
+  padding: 34px 14px 0;
+}
+
+#greetings .tit_h3 h3 {
+  margin-top: 40px;
+}
+
+#greetings .text_area {
+  margin-top: 13px;
+  padding: 0 340px 0 0;
+}
+
+#greetings .text_area p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  color: #3a3a4a;
+}
+
+#greetings .text_area p:first-child {
+  margin-bottom: 7px;
+}
+
+#greetings .text_area .sign {
+  padding: 50px 0 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /* position: relative; */
+}
+
+#greetings .text_area .sign p {
+  width: fit-content;
+}
+
+#greetings .text_area .sign img {
+  width: 102px;
+  height: 55px;
+  margin-left: 29px;
+  /* position: absolute;
+  right: 0;
+  bottom: 0; */
+}
+
+#greetings .person {
+  width: 350.1px;
+  height: 620px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+  #greetings .contents_wrap {
+    border-bottom: none;
+}
+
+  #greetings .person {
+    display: none;
+  }
+
+  #greetings .text_area {
+    padding: 0;
+  }
+
+  #greetings .text_area p {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.26px;
+  }
+
+  #greetings .text_area .sign {
+    padding: 29px 0 18px 0;
+  }
+}

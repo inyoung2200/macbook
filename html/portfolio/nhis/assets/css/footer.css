@@ -1,0 +1,183 @@
+#footer {
+  width: 100%;
+  border-top: 1px solid #f0edec;
+  position: relative;
+  margin-top: 80px;
+}
+#footer .container {
+  padding: 55px 20px 57px 20px;
+  display: flex;
+  justify-content: center;
+  
+}
+#footer .container .top {
+  padding-bottom: 68px;
+}
+#footer .container .top ul {
+  display: flex;
+}
+#footer .container .top ul li {
+  padding-left: 18px;
+}
+#footer .container .top ul li:first-child {
+  padding-left: 0;
+}
+#footer .container .top ul li a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  color: #6c6d73;
+  font-size: 12px;
+}
+#footer .container .bottom {
+  
+}
+#footer .container .bottom p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  color: #6c6d73;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+#footer .container .top ul li a.color_red {
+  color: #ee0700
+  ;
+}
+
+#footer .container .right {
+  margin-left:64px;
+}
+
+#footer .container .right .selectbox {
+  
+}
+
+#footer .container .right .selectbox .s_container {
+  display: flex;
+}
+
+#footer .container .right .selectbox .s_container .select select {
+  width: 196px;
+  height: 40px;
+  border: 1px solid #e1e3e6;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 18px;
+  background: url('../icon/arrow-navy.png') no-repeat 95% 50%; /* 화살표 아이콘 추가 */
+}
+
+#footer .container .right .selectbox .s_container .select button {
+  width: 47px;
+  height: 40px;
+  border: 1px solid #e1e3e6;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+  transform: translateX(-5px);
+}
+
+@media (max-width:1265px){
+  #footer .container .left {
+    position: absolute;
+    top: 55px;
+    left: 20px;
+  }
+
+  #footer .container .right {
+    position: absolute;
+    top: 55px;
+    right: 20px;
+  }
+}
+
+@media (max-width:1023px) {
+  #footer .container {
+    flex-direction: column;
+  }
+  #footer .container .left {
+    position: static;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer .container .top {
+    margin: 0 auto;
+    padding-bottom: 120px;
+  }
+
+  #footer .container .bottom {
+    margin: 0 auto;
+  }
+
+  #footer .container .right {
+    margin-left: 0;
+    position: static;
+    margin: 0 auto;
+    transform: translateY(-170px);
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+  #footer {
+    margin-top: 50px;
+  }
+  
+  #footer .container .left {
+    text-align: left;
+  }
+  #footer .container .top {
+    position: absolute;
+    left: 14px;
+    top: 30px;
+    padding-right: 20px;
+  }
+  #footer .container .bottom {
+    position: absolute;
+    left: 14px;
+    top: 210px;
+    padding-right: 20px;
+  }
+
+  #footer .container .right {
+    position: absolute;
+    top: 80px;
+    left: 14px;
+    transform: translateY(0);
+  }
+  #footer .container .right .selectbox .s_container {
+    flex-direction: column;
+  }
+
+  #footer .container .right .selectbox .s_container .select {
+    margin-bottom: 16px;
+  }
+
+  #footer .container .right .selectbox .s_container .select select {
+    width: calc(100% - 69px);
+    height: 44px;
+  }
+
+  #footer .container .right .selectbox .s_container .select button {
+    height: 44px;
+  }
+}
+
+@media screen and (max-width:423px) {
+  #footer .container .top ul li:last-child {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    padding-left: 0;
+  }
+
+  #footer .container .bottom {
+    top: 234px;
+  }
+
+  #footer .container .right {
+    top: 109px;
+  }
+}

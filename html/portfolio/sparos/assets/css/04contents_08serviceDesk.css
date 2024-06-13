@@ -1,0 +1,234 @@
+#serviceDesk {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "sidebar footer";
+    grid-auto-columns: 260px auto;
+    grid-auto-rows: 66px auto 249px;
+}
+
+.main {
+    grid-area: content;
+}
+
+.section_container {
+    padding: 0 44px 289px;
+}
+
+.section_cont {
+    display: grid;
+    grid-template-areas:
+        "aaa bbb ccc ddd eee fff"
+        "ggg ggg ggg hhh hhh hhh";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 255px 322px;
+    grid-gap: 22px;
+}
+
+.section_cont > div {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.cont1 {
+    grid-area: aaa;
+    background-color: #e25539;
+}
+
+.cont2 {
+    grid-area: bbb;
+    background-color: #fff;
+}
+
+.cont3 {
+    grid-area: ccc;
+    background-color: #fff;
+}
+
+.cont4 {
+    grid-area: ddd;
+    background-color: #fff;
+}
+
+.cont5 {
+    grid-area: eee;
+    background-color: #fff;
+}
+
+.cont6 {
+    grid-area: fff;
+    background-color: #9f9b9b;
+}
+
+.cont6 .cont_container .line {
+    background-color: #fff;
+}
+
+.cont_container {
+    padding: 34px 30px 28px 30px;
+}
+
+.cont_container .cont_tit {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 18px;
+    color: #fff;
+}
+
+.cont_container .cont_top {
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-between;
+}
+.cont_container .cont_top .icon {
+    width: 44px;
+    height: 44px;
+    background: url(../icon/icon_accumulate@2x.png);
+    background-size: cover;
+}
+.cont_container .cont_top .num {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 36px;
+    color: #fff;
+    transform: translateY(10px);
+}
+
+.cont_container .cont_top .num span {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 14px;
+}
+
+.cont_container .line {
+    width: 100%;
+    height: 1px;
+    background: #e77c61;
+    margin-top: 18px;
+}
+
+.cont_container .cont_bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.cont_container .cont_bottom .left {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    transform: translateY(1px);
+}
+
+.cont_container .cont_bottom .right {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.cont_container.type2 .cont_tit {
+    color: #333;
+}
+
+.cont_container.type2 .cont_top {
+    justify-content: end;
+}
+
+.cont_container.type2 .cont_top .num {
+    color: #333;
+    float: right;
+}
+
+.cont_container.type2 .line {
+    background-color: #e2e2e2;
+}
+
+.cont_container.type2 .cont_bottom .left {
+    color: #777;
+}
+
+.cont_container.type2 .cont_bottom .right {
+    color: #777;
+}
+
+.cont7 {
+    grid-area: ggg;
+}
+
+.cont7 .graph_wrap {
+    border: 0;
+}
+
+.cont8 {
+    grid-area: hhh;
+}
+
+.cont8 .graph_wrap {
+    border: 0;
+}
+
+.cont8 .com_gragh .graph_wrap .graph_cont .graph_img {
+    width: 180px;
+    height: 180px;
+    background: url(../icon/img_circle\ graph3@2x.png);
+    background-size: cover;
+}
+
+@media (max-width:1500px){
+    .section_cont {
+        grid-template-areas:
+        "aaa aaa bbb bbb ccc ccc"
+        "ddd ddd eee eee fff fff"
+        "ggg ggg ggg hhh hhh hhh";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 255px 255px 438px;
+    }
+}
+
+@media (max-width:1024px){
+    #serviceDesk {
+        display: block;
+    }
+
+    .section_container {
+        padding: 0 44px 90px;
+    }
+}
+
+@media (max-width:768px){
+    #serviceDesk {
+        display: block;
+    }
+
+    .section_cont {
+        display: block;
+    }
+
+    .section_cont > div {
+        margin-top: 18px;
+    }
+
+    .section_cont > div:first-child {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:390px){
+    #serviceDesk .graph_wrap .graph_cont .graph_img {
+        width: 180px;
+        height: 180px;
+    }
+    #serviceDesk .graph_wrap .graph_cont .graph_list {
+        width: max-content;
+    }
+}
+
+@media (max-width:330px){
+    #serviceDesk .graph_wrap .graph_cont .graph_img {
+        width: 45vw;
+        height: 45vw;
+    }
+    #serviceDesk .graph_wrap .graph_cont .graph_list {
+        width: inherit;
+    }
+}

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: #1f2530;
+}
+
+/* 헤더 */
+.otp_header {
+    padding-top: 220px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 540px){
+    .otp_header {
+        padding-top: 60px;
+        padding-bottom: 52px;
+    }
+}
+/* 메인 */
+
+.otp_main {
+    display: grid;
+    justify-content: center;
+}
+.otp_main .otp_text {
+    margin: 0 11px 13px;
+}
+.otp_main .otp_text p {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+}
+
+@media (max-width: 540px){
+    .otp_main .otp_text {
+        margin: 0 5px 15px;
+    }
+
+    .otp_main .otp_text p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+/* 푸터 */
+.otp_footer {
+    padding-bottom: 234px;
+}
+.otp_footer .com_btn3_wrap {
+    margin-left: 36px;
+}
+
+.otp_footer .footer_text ul {
+    margin-top: 24px;
+}
+
+@media (max-width: 540px){
+    .otp_footer {
+        padding-bottom: 79px;
+    }
+
+    .otp_footer .com_btn3_wrap {
+        margin-left: 0;
+    }
+
+    .otp_footer .footer_text ul {
+        margin-top: 18px;
+    }
+}

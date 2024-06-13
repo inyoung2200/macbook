@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>common_accordion_menu</title>
+
+    <!-- css -->
+    <link href="../assets/css/common_accordion_menu.css" rel="stylesheet">
+    <link href="../assets/css/reset.css" rel="stylesheet">
+
+    <!-- 스크립트 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 아코디언 메뉴 -->
+    <nav class="com_acomenu">
+        <div class="com_acomenu_wrap">
+            <div class="com_acomenu_header">
+                <div class="ico_close"></div>
+                <div class="name">홍길동 님</div>
+                <div class="ico_notice"></div>
+            </div>
+            <ul class="com_acomenu_list">
+                <li>
+                    <a class="acomenu_tit" href="#">
+                        <img class="ico_tit" src="../assets/icon/icon_dashboard.png" no-repeat center center>
+                        <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                            center>
+                        <div class="text_tit">대시보드</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="acomenu_tit" href="#">
+                        <img class="ico_tit" src="../assets/icon/icon_costanalysis.png" no-repeat center center>
+                        <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                            center>
+                        <div class="text_tit">비용분석</div>
+                        <img class="ico_down" src="../assets/icon/Color Overlay@3x.png">
+                        <img class="ico_down_on" src="../assets/icon/Color Overlay@3x.png" no-repeat center center>
+                    </a>
+                    <ul class="acomenu_subject">
+                        <li>
+                            <a class="acomenu_cont" href="#">
+                                <div class="acomenu_cont_wrap">
+                                    <p>고객사별 서비스 비용</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="acomenu_cont" href="#">
+                                <div class="acomenu_cont_wrap">
+                                    <p>고객사별 잔액(선급금) 조회</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="acomenu_cont" href="#">
+                                <div class="acomenu_cont_wrap">
+                                    <p>고객사별 Sport 인스턴스 추천관리</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="acomenu_cont sport" href="#">
+                                <div class="acomenu_cont_wrap sport">
+                                    <p class="pc_sport">Sport instance Recommentdation Mgt by Customer</p>
+                                    <p class="mobile_sport">SportInstance Recommentdation Mgt by Customer</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="acomenu_tit" href="#">
+                        <img class="ico_tit" src="../assets/icon/icon_optimization.png" no-repeat center center>
+                        <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                            center>
+                        <div class="text_tit">비용최적화</div>
+                        <img class="ico_down" src="../assets/icon/Color Overlay@3x.png">
+                        <img class="ico_down_on" src="../assets/icon/Color Overlay@3x.png" no-repeat center center>
+                    </a>
+                    <ul class="acomenu_subject">
+                        <li>
+                            <a class="acomenu_cont" href="#">
+                                <div class="acomenu_cont_wrap">
+                                    <p>고객사별 서비스 비용</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="acomenu_cont" href="#">
+                                <div class="acomenu_cont_wrap">
+                                    <p>고객사별 잔액(선급금) 조회</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="acomenu_cont" href="#">
+                                <div class="acomenu_cont_wrap">
+                                    <p>고객사별 Sport 인스턴스 추천관리</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="acomenu_cont sport" href="#">
+                                <div class="acomenu_cont_wrap sport">
+                                    <p class="pc_sport">Sport instance Recommentdation Mgt by Customer</p>
+                                    <p class="mobile_sport">SportInstance Recommentdation Mgt by Customer</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="acomenu_tit" href="#">
+                        <img class="ico_tit" src="../assets/icon/icon_claim.png" no-repeat center center>
+                        <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                            center>
+                        <div class="text_tit">정산/청구관리</div>
+                        <img class="ico_down" src="../assets/icon/Color Overlay@3x.png">
+                        <img class="ico_down_on" src="../assets/icon/Color Overlay@3x.png" no-repeat center center>
+                    </a>
+                    <ul class="acomenu_subject">
+                        <li>
+                            <a class="acomenu_cont" href="#">
+                                <div class="acomenu_cont_wrap">
+                                    <p>고객사별 서비스 비용</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="acomenu_cont" href="#">
+                                <div class="acomenu_cont_wrap">
+                                    <p>고객사별 잔액(선급금) 조회</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="acomenu_cont" href="#">
+                                <div class="acomenu_cont_wrap">
+                                    <p>고객사별 Sport 인스턴스 추천관리</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="acomenu_cont sport" href="#">
+                                <div class="acomenu_cont_wrap sport">
+                                    <p class="pc_sport">Sport instance Recommentdation Mgt by Customer</p>
+                                    <p class="mobile_sport">SportInstance Recommentdation Mgt by Customer</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="acomenu_tit" href="#">
+                        <img class="ico_tit" src="../assets/icon/icon_credit.png" no-repeat center center>
+                        <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                            center>
+                        <div class="text_tit">크래딧 관리</div>
+                        <img class="ico_down" src="../assets/icon/Color Overlay@3x.png">
+                        <img class="ico_down_on" src="../assets/icon/Color Overlay@3x.png" no-repeat center center>
+                    </a>
+                    <ul class="acomenu_subject">
+                        <li>
+                            <a class="acomenu_cont" href="#">
+                                <div class="acomenu_cont_wrap">
+                                    <p>고객사별 서비스 비용</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="acomenu_cont" href="#">
+                                <div class="acomenu_cont_wrap">
+                                    <p>고객사별 잔액(선급금) 조회</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="acomenu_cont" href="#">
+                                <div class="acomenu_cont_wrap">
+                                    <p>고객사별 Sport 인스턴스 추천관리</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="acomenu_cont sport" href="#">
+                                <div class="acomenu_cont_wrap sport">
+                                    <p class="pc_sport">Sport instance Recommentdation Mgt by Customer</p>
+                                    <p class="mobile_sport">SportInstance Recommentdation Mgt by Customer</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="acomenu_tit" href="#">
+                        <img class="ico_tit" src="../assets/icon/icon_sales.png" no-repeat center center>
+                        <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                            center>
+                        <div class="text_tit">매입/매출관리</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="acomenu_tit" href="#">
+                        <img class="ico_tit" src="../assets/icon/icon_resource.png" no-repeat center center>
+                        <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                            center>
+                        <div class="text_tit">자원현황</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="acomenu_tit" href="#">
+                        <img class="ico_tit" src="../assets/icon/icon_desk@3x.png" no-repeat center center>
+                        <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                            center>
+                        <div class="text_tit">서비스데스크</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="acomenu_tit" href="#">
+                        <img class="ico_tit" src="../assets/icon/icon_monitoring.png" no-repeat center center>
+                        <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                            center>
+                        <div class="text_tit">모니터링</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="acomenu_tit" href="#">
+                        <img class="ico_tit" src="../assets/icon/icon_management.png" no-repeat center center>
+                        <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                            center>
+                        <div class="text_tit">정보관리</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="acomenu_tit" href="#">
+                        <img class="ico_tit" src="../assets/icon/icon_support.png" no-repeat center center>
+                        <img class="ico_tit_on" src="../assets/icon/icon_on_costanalysis@3x.png" no-repeat center
+                            center>
+                        <div class="text_tit">고객지원</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+
+
+    <script>
+        // 아코디언 슬라이드 
+        $('.acomenu_tit').on('click', function () {
+
+            if ($(this).hasClass('on')) {
+                slideUp();
+            } else {
+                slideUp();
+                $(this).addClass('on').next().slideDown();
+            }
+
+            function slideUp() {
+                $('.acomenu_tit').removeClass('on').next().slideUp();
+            };
+        });
+
+        // 아코디언 메뉴 클릭시 효과
+        $('.acomenu_cont_wrap').on('click', function () {
+
+            if ($(this).hasClass('on')) {
+                active();
+            } else {
+                active();
+                $(this).addClass('on');
+            }
+
+            function active() {
+                $('.acomenu_cont_wrap').removeClass("on");
+            };
+        });
+
+        // 메뉴 클릭시 아코디언메뉴 등장/ x 클릭시 사라지게
+        $('.cont_ico_menu').click(function () {
+            $('.com_acomenu').css("left", "0");
+        });
+        $('.ico_close').click(function () {
+            $('.com_acomenu').css("left", "-220px");
+        });
+    </script>
+</body>
+
+</html>

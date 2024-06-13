@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- css -->
+  <link href="../assets/css/import.css" rel="stylesheet">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header id="common_header">
+    <div class="container">
+      <div class="top">
+        <div class="userset">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">인증서안내</a></li>
+            <li><a href="#">전체메뉴</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="logo">
+          <a href="../pages/main.html">
+            <img src="../assets/icon/logo 3@2x.png">
+            <span class="ir_pm">국민건강보험</span>
+          </a>
+        </div>
+        <div class="gnb">
+          <ul>
+            <li><a href="#" class="on">민원여기요</a></li>
+            <li><a href="#">건강IN</a></li>
+            <li><a href="#">정책센터</a></li>
+            <li><a href="../pages/disclosureSystem.html">국민과함께</a></li>
+            <li><a href="../pages/greetings.html">공단요모조모</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="search"></div>
+          <div class="tab"></div>
+        </div>
+      </div>
+
+      <div class="bg_img">
+        <img class="bg_left" src="../assets/icon/bg_layout_l.png">
+        <img class="bg_right" src="../assets/icon/bg_layout_r.png">
+      </div>
+    </div>
+  </header>
+  <!-- //헤더 -->
+
+
+  <!-- 컨텐츠 -->
+
+  <!-- 검색영역 -->
+  <section id="search">
+    <div class="container">
+      <div class="left">
+        <div class="search_box">
+          <input class="search_input" type="text" placeholder="무엇을 찾고 있으신가요?">
+          <button class="search_btn">
+            <img src="../assets/icon/그룹 7@2x.png">
+          </button>
+        </div>
+      </div>
+      <div class="right">
+        <img src="../assets/icon/이미지 10@2x.png">
+        <div class="pagenav moblie">
+          <span>01 / 02</span>
+          <a class="btn_left"><img src="../assets/icon/arrow-banner-l.png"></a>
+          <a class="btn_right"><img src="../assets/icon/arrow-banner-r.png"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //검색영역 -->
+
+  <!-- 메뉴 -->
+  <section id="menu">
+    <div class="container">
+      <div class="tit">
+        <h3>방문자별 맞춤 메뉴</h3>
+        <div class="munu_select">
+          <button class="left on">개인</button>
+          <button class="right">사업장</button>
+        </div>
+      </div>
+      <div class="menu_wrap">
+        <ul>
+          <li>
+            <a>
+              <div class="img1">
+                <img src="../assets/icon/그룹 108@2x.png">
+              </div>
+              <p>자격득실<br>확인서 발급</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <div class="img2">
+                <img src="../assets/icon/그룹 109@2x.png">
+              </div>
+              <p>환급금<br>조회/신청</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="../assets/icon/그룹 110@2x.png">
+              <p>보험료<br>조회/납부</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="../assets/icon/그룹 111@2x.png">
+              <p>보험료<br>계산기</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="../assets/icon/그룹 112@2x.png">
+              <p>재난적의료비<br>지원안내</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="../assets/icon/그룹 113@2x.png">
+              <p>건강검진<br>대상조회</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="../assets/icon/그룹 114@2x.png">
+              <p>가족<br>건강관리</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="../assets/icon/그룹 115@2x.png">
+              <p>민원<br>서식자료실</p>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="../assets/icon/그룹 116@2x.png">
+              <p>본인부담<br>상한액조회</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- //메뉴 -->
+
+  <!-- 중간 배너 -->
+  <div id="banner_middle">
+    <div class="container">
+      <div class="banner_cont">
+        <p>
+          안녕하세요.<br>
+          <em>공단 홈페이지 방문을 환영합니다.</em>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- //중간 배너 -->
+
+  <!-- 컨텐츠 박스 -->
+  <section id="contents">
+    <div class="container">
+      <div class="box1">
+        <div class="box_container">
+          <ul>
+            <li>공지사항<span>></span></li>
+            <li>채용공고<span>></span></li>
+            <li>보도자료<span>></span></li>
+            <li>입찰공고<span>></span></li>
+            <li>경영공시<span>></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="box_container">
+          <h3>건강정보</h3>
+          <ul>
+            <li><a>가까운 병의원 찾기<img src="../assets/icon/icon-health-info-1 (1).png"></a></li>
+            <li><a>검진기관 찾기<img src="../assets/icon/icon-health-info-2.png"></a></li>
+            <li><a>건강IN 매거진<img src="../assets/icon/icon-health-info-3.png"></a></li>
+            <li><a>건강뉴스<img src="../assets/icon/icon-health-info-4.png"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box3">
+        <div class="box_container">
+          <h3>보장성 강화</h3>
+          <p class="p">
+            병원비 걱정 없는 든든한 나라<br>
+            건강보험 보장성강화 대책을 알아보세요!
+          </p>
+          <h3>보장성 강화</h3>
+          <p>
+            Health Insurance Research<br>
+            Institute(HIRI)
+          </p>
+        </div>
+      </div>
+      <div class="box4">
+        <div class="box_container">
+          <h3>국민건강 알림서비스</h3>
+          <p>
+            <em>2021.12.24</em><br>
+            전국기준
+          </p>
+          <img src="../assets/icon/이미지 3@2x.png">
+          <ul>
+            <li class="on"><a>감기</a></li>
+            <li><a>눈병</a></li>
+            <li><a>식중독</a></li>
+            <li><a>천식</a></li>
+            <li><a>피부염</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box5">
+        <div class="box5_top">
+          <div class="box_container">
+            <h3>조직</h3>
+            <p>
+              국민건강보험공단의<br>
+              부서별 조직도를 확인해보세요.
+            </p>
+          </div>
+        </div>
+        <div class="box5_bottom">
+          <div class="box_container">
+            <h3>지사찾기</h3>
+            <p>
+              가까운 지사를 방문하시면<br>
+              민원업무를 처리하실 수 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box6">
+        <div class="box_container">
+          <h3>홍보존</h3>
+          <div class="pagenav moblie">
+            <span>01 / 02</span>
+            <a class="btn_left"><img src="../assets/icon/arrow-banner-l.png"></a>
+            <a class="btn_right"><img src="../assets/icon/arrow-banner-r.png"></a>
+          </div>
+          <div class="img">
+            <img src="../assets/img/02사이버홍보관.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //컨텐츠 박스 -->
+
+  <!-- 고객센터 -->
+  <section id="center">
+    <div class="container">
+      <div class="tit">
+        <h3>고객센터</h3>
+        <h3></h3>
+        <h3>APP 다운로드</h3>
+      </div>
+
+      <div class="box_wrap">
+        <div class="box1">
+          <strong>1577-1000</strong>
+          <p>업무시간 09:00 ~ 18:00</p>
+          <img src="../assets/icon/i-customer-1@2x.png">
+        </div>
+        <div class="box2">
+          <strong>외국인 민원센터</strong>
+          <p>
+            외국인 분들의<br>
+            민원 신청을 하실 수 있습니다.
+          </p>
+          <img src="../assets/icon/i-customer-2@2x.png">
+        </div>
+        <div class="box3">
+          <div>
+            <img src="../assets/icon/이미지 4@2x.png">
+            <p>Android</p>
+          </div>
+          <div>
+            <img src="../assets/icon/이미지 4@2x.png">
+            <p>iOS</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- //고객센터 -->
+
+  <!-- //컨텐츠 -->
+
+
+  <!-- 푸터 -->
+  <footer id="footer">
+    <div class="container">
+      <div class="left">
+        <div class="top">
+          <ul>
+            <li><a>이용약관</a></li>
+            <li><a>영상정보처리기기 운영지침</a></li>
+            <li><a class="color_red">개인정보처리방침</a></li>
+            <li><a>온라인도우미</a></li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <p>
+            본 홈페이지에 게시된 이메일주소가 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.<br>
+            26464 강원도 원주시 건강로 32(반곡동) 국민건강보험공단 고객센터 :1577-1000(발신자 부담) 업무시간 : 09시~18시(월~금)<br>
+            Copyright @ 2020 by National Health Insurance Service. All rights reserved.
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="selectbox">
+          <div class="s_container">
+            <div class="select">
+              <select name="insite">
+                <option value="내부관련사이트">내부관련사이트</option>
+                <option value="노인장기요양보험">노인장기요양보험</option>
+                <option value="사회보험징수포털">사회보험징수포털</option>
+                <option value="요양기관정보마당 사이트">요양기관정보마당 사이트</option>
+                <option value="국민건강보험 EDL서비스">국민건강보험 EDL서비스</option>
+                <option value="건강관리포털시스템">건강관리포털시스템</option>
+                <option value="국가건강검진교육연수원">국가건강검진교육연수원</option>
+                <option value="국민건강보험자료 공유서비스">국민건강보험자료 공유서비스</option>
+                <option value="국민건강보험공단 인재개발원">국민건강보험공단 인재개발원</option>
+                <option value="국민건강보험공단 전문도서관">국민건강보험공단 전문도서관</option>
+                <option value="국민건강보험공단 공단가족">국민건강보험공단 공단가족</option>
+              </select>
+              <button>이동</button>
+            </div>
+            <div class="select">
+              <select name="site">
+                <option value="관련사이트">관련사이트</option>
+                <option value="서울요양병원">서울요양병원</option>
+                <option value="일산병원">일산병원</option>
+                <option value="행정정보공동이용센터">행정정보공동이용센터</option>
+                <option value="국민연금">국민연금</option>
+                <option value="근로복지공단">근로복지공단</option>
+                <option value="보건복지부">보건복지부</option>
+                <option value="국민권익위원회">국민권익위원회</option>
+                <option value="인터넷 지로납부">인터넷 지로납부</option>
+                <option value="건강보험심사평가원">건강보험심사평가원</option>
+                <option value="정보24">정보24</option>
+              </select>
+              <button>이동</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- //푸터 -->
+
+
+
+  <script>
+
+  </script>
+</body>
+
+</html>

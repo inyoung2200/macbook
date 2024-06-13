@@ -1,0 +1,249 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.5;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  text-transform: none;
+  cursor: pointer;
+  border: 0;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* STYLING SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 26px;
+  /* THIS WILL RESET THE DEFAULT SCORLLBAR STYLING */
+}
+
+/* TO STYLE THE SCROLLBAR TRACK */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* THIS WILL SET THE COLOR OF THE SCROLLBAR TRACK */
+  width: 12px;
+}
+
+/* TO STYLE THE SCROLLBAR THUMB */
+::-webkit-scrollbar-thumb {
+  width: 12px;
+  background-color: rgba(0, 0, 0, 0.12);
+  border: 9px solid transparent;
+  border-radius: 5vw;
+  background-clip: content-box;
+}
+
+.ui-resizable-helper {
+  border: 1px dotted rgb(2, 2, 2);
+}
+
+.ui-draggable {
+  /* transition: none !important; */
+}
+
+/* ***** reset ***** */
+
+/* 공통 */
+:root {
+  --bg-dark-color: rgba(0, 0, 0, 0.3);
+  --layer-bg-dark-color: rgba(0, 0, 0, 0.4);
+  --layer-bg-dark-color2: rgba(0, 0, 0, 0.6);
+  --layer-bg-dark-color3: rgba(0, 0, 0, 0.8);
+  --bg-light-color: rgba(225, 225, 225, 0.3);
+  --layer-bg-light-color: rgba(225, 225, 225, 0.4);
+  --layer-bg-light-color2: rgba(225, 225, 225, 0.6);
+  --layer-bg-light-color3: rgba(225, 225, 225, 0.8);
+}
+
+.displayNone {
+  display: none;
+}
+
+.closeScreenAction {
+  opacity: 0;
+  transform: rotateX(90deg);
+  transition-property: transform, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.openScreenAction {
+  opacity: 1;
+  transform: rotateX(0deg);
+  transition-property: transform, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ui-resizable-e {
+  cursor: e-resize;
+  width: 7px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  z-index: 9999999;
+}
+
+.ui-resizable-s {
+  cursor: s-resize;
+  height: 7px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 9999999;
+}
+
+.ui-resizable-se {
+  cursor: se-resize;
+  width: 12px;
+  height: 12px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 9999999;
+}
+
+.section-header .btn-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-header .btn-wrap .btn {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+}
+
+.section-header .btn-wrap .btn.red {
+  background-color: #f96056;
+}
+
+.section-header .btn-wrap .btn.yellow {
+  background-color: #f8ce52;
+}
+
+.section-header .btn-wrap .btn.green {
+  background-color: #62ce67;
+}
+
+.section-header .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+}
+
+/* ***** 공통 클래스 ***** */
+
+/* 아이콘 */
+.icon.app {
+  background: url(../img/ico_apps.png);
+}
+
+.icon.update {
+  background: url(../img/ico_refresh.png);
+}
+
+.icon.home {
+  background: url(../img/ico_home-button.png);
+}
+
+.icon.todo {
+  background: url(../img/ico_calendar.png);
+}
+
+.icon.pf {
+  background: url(../img/ico_pf.png);
+}
+
+.icon.weather {
+  background: url(../img/ico_weather.png);
+}
+
+.icon.bookmark {
+  background: url(../img/ico_bookmark.png);
+}
+
+.icon.favorites {
+  background: url(../img/ico_rate.png);
+}
+
+.icon.map {
+  background: url(../img/ico_map-point.png);
+}
+
+.icon.add {
+  background: url(../img/ico_add.png);
+}
+
+.icon.lock {
+  background: url(../img/ico_lock.png);
+}
+
+.icon.about {
+  background: url(../img/ico_about.png);
+}
+
+.icon.font {
+  background: url(../img/ico_font.png);
+}
+
+
+
+/* *** 아이콘 *** */

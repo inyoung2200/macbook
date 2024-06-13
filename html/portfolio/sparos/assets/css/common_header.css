@@ -1,0 +1,183 @@
+.com_header {
+    background-color: #1f2530;
+    grid-area: header;
+}
+
+.com_header_wrap {}
+
+.com_header_cont {
+    padding: 11px 20px 11px 14px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.com_header_cont .left {
+    display: flex;
+    align-items: center;
+}
+
+.com_header_cont .right {
+    display: flex;
+    align-items: center;
+}
+
+.com_header_cont .left .cont_ico_menu {
+    width: 44px;
+    height: 44px;
+    background: url('../icon/ico_menu3x.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.com_header_cont .left .cont_ico_logo {
+    width: 140px;
+    height: 22px;
+    background: url('../icon/SSG_logo.png') no-repeat center center;
+    background-size: cover;
+    margin-left: 1.1vw;
+}
+
+.com_header_cont .left .cont_ico_help {
+    width: 36px;
+    height: 36px;
+    background: url('../icon/icon_help.png') no-repeat center center;
+    background-size: cover;
+    margin-left: 2.2vw;
+}
+
+.com_header_cont .left  .cont_ico_notice {
+    width: 22px;
+    height: 22px;
+    background: url('../icon/icon_notice.png') no-repeat center center;
+    background-size: cover;
+    margin-left: 2.0vw;
+}
+
+.com_header_cont .left .cont_text_notice {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 16px;
+    color: #fff;
+    margin-left: 0.8vw;
+}
+
+.com_header_cont .cont_text_notice span {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 12px;
+    color: #bcb8b8;
+    margin-left: 0.3vw;
+}
+
+.com_header_cont .right .cont_box_my {
+    width: 191px;
+    height: 40px;
+    border-radius: 10px;
+    background: #363b45;
+    display: flex;
+    align-items: center;
+    margin-right: 26px;
+}
+
+.com_header_cont .right .cont_box_my .ico_profile {
+    width: 23px;
+    height: 23px;
+    background: url('../icon/icon_profile.png') no-repeat center center;
+    background-size: cover;
+    margin-left: 18px;
+}
+
+.com_header_cont .right .cont_box_my .text_myname {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 14px;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.com_header_cont .right .cont_box_my .icon_arrow_b {
+    width: 15px;
+    height: 8px;
+    background: url('../icon/icon_arrow_b@3x.png') no-repeat center center;
+    background-size: cover;
+    margin-left: 54px;
+}
+
+.com_header_cont .right .cont_ico_logout {
+    width: 23px;
+    height: 25px;
+    background: url('../icon/icon_logout.png') no-repeat center center;
+    background-size: cover;
+}
+
+@media (max-width : 1024px) {
+    .com_header_cont {
+        padding: 24px 20px 64px 20px;
+        height: 110px;
+        justify-content: center;
+        position: relative;
+    }
+
+    .cont_ico_notice {
+        display: none;
+    }
+
+    .cont_text_notice {
+        display: none;
+    }
+
+    .com_header_cont .left .cont_ico_menu {
+        width: 24px;
+        height: 24px;
+        background: url(../icon/icon_m_menu.png) no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        left: 20px;
+        top: 70px;
+    }
+
+    .com_header_cont .left .cont_ico_logo {
+        width: 146px;
+        height: 22px;
+        margin: 0 auto;
+        padding-bottom: 22px;
+    }
+
+    .com_header_cont .left .cont_ico_help {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: 52px;
+        top: 70px;
+    }
+
+    .com_header_cont .right .cont_box_my {
+        width: 119px;
+        height: 28px;
+        position: absolute;
+        right: 52px;
+        top: 68px;
+    }
+
+    .com_header_cont .right .cont_box_my .ico_profile {
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+    }
+
+    .com_header_cont .right .cont_box_my .text_myname {
+        font-size: 12px;
+    }
+
+    .com_header_cont .right .cont_box_my .icon_arrow_b {
+        width: 8px;
+        height: 4px;
+        margin-left: 26px;
+    }
+
+    .com_header_cont .right .cont_ico_logout {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 24px;
+        top: 74px;
+    }
+}

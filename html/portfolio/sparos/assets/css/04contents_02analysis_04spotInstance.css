@@ -1,0 +1,227 @@
+#spotInstance {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "sidebar footer";
+    grid-auto-columns: 260px auto;
+    grid-auto-rows: 66px auto 249px;
+}
+
+.section_wrap {
+    
+}
+
+.section_container {
+    padding: 24px 44px 266px;
+}
+.table_wrap {
+    display: flex;
+}
+table {
+    border-top: 2px solid #1f2530;
+    text-align: left;
+    /* display: grid;
+    grid-template-areas:
+        "th1 td1 td1 td1 th2 td2 td2 td2"
+        "th3 td3 td3 td3 th4 td4 td4 td4"
+        "th5 td5 td5 td5 th6 td6 td6 td6"
+        "th7 td7 td7 td7 th8 td8 td8 td8"
+        "th9 td9 td9 td9 th10 td10 td10 td10"
+        "th11 td11 td11 td11 td11 td11 td11 td11"
+        "th12 td12 td12 td12 td12 td12 td12 td12"
+        "th13 td13 td13 td13 td13 td13 td13 td13"
+        "th13 td14 td14 td14 td14 td14 td14 td14"
+        "th13 td15 td15 td15 td15 td15 td15 td15";
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(10, 42px);
+    table-layout: unset; */
+}
+
+.table_left tr th {
+}
+.table_left tr td {
+}
+
+.table_right tr th {
+}
+.table_right tr td {
+}
+
+
+tr th {
+    width: 206px;
+    border-bottom: 1px solid #e4e0e0;
+    background-color: #c5c6cf;
+    padding: 14px 18px;
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 14px;
+    color: #333;
+    height: 42px;
+}
+
+th span {
+    color: #e24f39;
+}
+
+tr td {
+    width: 70%;
+    border-bottom: 1px solid #e4e0e0;
+    background-color: #fff;
+    padding: 7px 12px;
+}
+
+#spotInstance .td1 .selectbox {
+    width: 192px;
+    margin-right: 0;
+}
+
+#spotInstance input {
+    width: 278px;
+    height: 28px;
+    border: 1px solid #bcb8b8;
+    border-radius: 4px;
+}
+
+#spotInstance .td6 .selectbox {
+    width: 103px;
+}
+
+#spotInstance .td7 .selectbox {
+    width: 103px;
+}
+
+#spotInstance .td8 input {
+    width: 166px;
+}
+
+#spotInstance .td8 button {
+    width: 76px;
+    height: 28px;
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 14px;
+    color: #333;
+    background-color: #d3d3d3;
+    border-radius: 4px;
+}
+
+#spotInstance .td9 input {
+    width: 360px;
+}
+
+#spotInstance .td10 input {
+    width: 360px;
+}
+
+#spotInstance .td11 .selectbox {
+    width: 192px;
+}
+
+#spotInstance .td12 input {
+    width: 80px;
+}
+
+#spotInstance .td16 {
+    height: 46px;
+    padding: 0;
+}
+#spotInstance .td17 {
+    height: 46px;
+    padding: 0;
+}
+#spotInstance .td18 {
+    height: 46px;
+    padding: 0;
+}
+#spotInstance .td19 {
+    height: 46px;
+    padding: 0;
+}
+#spotInstance .td20 {
+    height: 46px;
+    padding: 0;
+}
+
+
+@media (max-width:1530px){
+    .table_wrap {
+        display: block;
+    }
+
+    .table2 {
+        border-top: 0;
+    }
+
+    .none {
+        display: none;
+    }
+}
+
+
+@media (max-width:1024px){
+    #spotInstance {
+        display: block;
+    }
+
+    .section_container {
+        padding: 24px 20px 90px;
+    }
+
+    tr th {
+        width: 30%;
+        font-size: 12px;
+    }
+
+    #spotInstance input {
+        height: 40px;
+    }
+
+    #spotInstance .selectbox {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    #spotInstance .td1 .selectbox {
+        width: 100%;
+    }
+
+    #spotInstance input {
+        width: 100%;
+    }
+
+    #spotInstance .td6 .selectbox {
+        width: 100%;
+    }
+
+    #spotInstance .td7 .selectbox {
+        width: 100%;
+    }
+
+    #spotInstance .td8 input {
+        width: calc(100% - 80px);
+    }
+
+    #spotInstance .td8 button {
+        width: 73px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    #spotInstance .td11 .selectbox {
+        width: 100%;
+    }
+
+    #spotInstance .td9 input {
+        width: 100%;
+    }
+
+    #spotInstance .td10 input {
+        width: 100%;
+    }
+
+    #spotInstance .td12 input {
+        width: calc(33.3333% - 14.3733px);
+    }
+}
+
+

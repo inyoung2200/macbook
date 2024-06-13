@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- css -->
+  <link href="../assets/css/import.css" rel="stylesheet">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!-- lnb -->
+  <section id="lnb">
+    <div class="container">
+      <h2>국민과함께</h2>
+      <div class="cate_wrap pc">
+        <ul>
+          <li><a href="../pages/disclosureSystem.html">정보공개제도란</a></li>
+          <li><a href="../pages/lifeInfo.html">국민생활 정보</a></li>
+          <li><a>정보공개청구</a></li>
+          <li><a>공공데이터 제공</a></li>
+          <li><a>공시송달</a></li>
+        </ul>
+      </div>
+      <div class="cate_wrap mobile">
+        <div class="select_cate">
+          <div>정보공개제도란</div>
+          <div class="icon_down"></div>
+        </div>
+        <div class="accordion_menu">
+          <ul>
+            <li><a href="../pages/disclosureSystem.html">정보공개제도란</a></li>
+            <li><a href="../pages/lifeInfo.html">국민생활 정보</a></li>
+            <li><a>정보공개청구</a></li>
+            <li><a>공공데이터 제공</a></li>
+            <li><a>공시송달</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //lnb -->
+
+  <script>
+    // lnb
+    $("#lnb .container .cate_wrap.mobile .select_cate").click(function () {
+      $(this).next("#lnb .container .cate_wrap.mobile .accordion_menu").stop().slideToggle(300);
+      $(this).toggleClass('on').siblings().removeClass('on');
+    });
+  </script>
+</body>
+
+</html>

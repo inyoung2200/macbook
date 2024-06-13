@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>포트폴리오</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font -->
+    <!-- font-family: 'Rampart One', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <!-- font-family: 'Trispace', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Facebook meta tags -->
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="http://inyoung222000.dothome.co.kr/" />
+    <meta property="og:image" content="http://whitetigerism.org/assets/images/main/visual/sacred-fire_1280.jpg" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <!-- Demo styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration-line: none;
+            text-decoration: none;
+        }
+
+        .wrap {
+            position: relative;
+            background-color: rgb(255, 248, 239);
+        }
+
+        .header {
+            font-family: 'Trispace', sans-serif;
+            font-size: 230px;
+            font-weight: 800;
+            color: rgb(28, 87, 248);
+            letter-spacing: -10px;
+            position: absolute;
+            left: 50%;
+            top: -100px;
+            transform: translate(-50%, 0);
+            padding: 20px;
+        }
+
+        .header em {
+            font-family: 'Rampart One', cursive;
+            font-weight: 100;
+            font-size: 300px;
+            font-style: normal;
+            letter-spacing: -30px;
+            padding-right: 40px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 280px;
+        }
+
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 500px;
+            /* height: 50%; */
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+
+        .slide-tit {
+            font-family: 'Trispace', sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            color: rgb(41, 73, 160);
+            letter-spacing: -1.5px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .slide-info {
+            font-family: 'Trispace', sans-serif;
+            font-size: 18px;
+            color: rgb(19, 49, 129);
+            text-align: center;
+        }
+
+        @media (max-width:1365px) {
+            .header {
+                font-size: 180px;
+                letter-spacing: -10px;
+                position: absolute;
+                left: 50%;
+                top: -50px;
+                transform: translate(-50%, 0);
+                padding: 20px;
+            }
+
+            .header em {
+                font-size: 250px;
+                letter-spacing: -30px;
+                padding-right: 40px;
+            }
+        }
+
+        @media (max-width:1082px) {
+            .header {
+                font-size: 130px;
+                letter-spacing: -5px;
+                position: absolute;
+                left: 50%;
+                top: -15px;
+                transform: translate(-50%, 0);
+                padding: 20px;
+            }
+
+            .header em {
+                font-size: 200px;
+                letter-spacing: -20px;
+                padding-right: 30px;
+            }
+        }
+
+        @media (max-width:865px) {
+            .header {
+                font-size: 110px;
+                letter-spacing: -2px;
+                position: absolute;
+                left: 50%;
+                top: 160px;
+                transform: translate(-50%, 0);
+                padding: 20px;
+            }
+
+            .header em {
+                font-size: 180px;
+                letter-spacing: -18px;
+                padding-right: 30px;
+                position: absolute;
+                left: 50%;
+                top: -190px;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        @media (max-width:767px) {
+            .header {
+                font-size: 150px;
+                letter-spacing: -2px;
+                position: absolute;
+                left: 50%;
+                top: 190px;
+                transform: translate(-50%, 0);
+                padding: 20px;
+            }
+
+            .header em {
+                font-size: 220px;
+                letter-spacing: -18px;
+                padding-right: 30px;
+                position: absolute;
+                left: 50%;
+                top: -230px;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        @media (max-width:540px) {
+            .header {
+                font-size: 110px;
+                letter-spacing: -2px;
+                position: absolute;
+                left: 50%;
+                top: 190px;
+                transform: translate(-50%, 0);
+                padding: 20px;
+            }
+
+            .header em {
+                font-size: 180px;
+                letter-spacing: -18px;
+                padding-right: 30px;
+                position: absolute;
+                left: 50%;
+                top: -190px;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        @media (max-width:440px) {
+            .header {
+                font-size: 80px;
+                letter-spacing: -2px;
+                position: absolute;
+                left: 50%;
+                top: 190px;
+                transform: translate(-50%, 0);
+                padding: 20px;
+            }
+
+            .header em {
+                font-size: 140px;
+                letter-spacing: -18px;
+                padding-right: 30px;
+                position: absolute;
+                left: 50%;
+                top: -150px;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        @media (max-width:320px) {
+            .header {
+                font-size: 25vw;
+                letter-spacing: -2px;
+                position: absolute;
+                left: 50%;
+                top: 190px;
+                transform: translate(-50%, 0);
+                padding: 20px;
+            }
+
+            .header em {
+                font-size: 40vw;
+                letter-spacing: -18px;
+                padding-right: 30px;
+                position: absolute;
+                left: 50%;
+                top: -150px;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        /* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/
+        @media all and (min-width:768px) and (max-width:1023px) {
+            .swiper-slide {
+                width: 500px;
+                /* height: 80%; */
+            }
+        }
+
+        /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
+        @media all and (min-width:480px) and (max-width:767px) {
+            .swiper-slide {
+                width: 380px;
+                /* height: 80%; */
+            }
+        }
+
+        /* 모바일 세로 (해상도 ~ 479px)*/
+        @media all and (max-width:479px) {
+            .swiper-slide {
+                width: 250px;
+                /* height: 80%; */
+            }
+        }
+
+        /* 320px이하 기기 */
+        @media all and (max-width:320px) {
+            .swiper-slide {
+                width: 60%;
+                /* height: 80%; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- <div class="header"><em>2022</em>WORK</div> -->
+        <div class="container">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <a class="swiper-slide" href="http://inyoung2200.dothome.co.kr/port/index4.html" target="_blank">
+                        <img src="./assets/img/yukihjk.jpg" />
+                        <div class="slide-tit">Portfolio</div>
+                        <div class="slide-info">Inyoung's portfolio site</div>
+                    </a>
+                    <a class="swiper-slide" href="http://inyoung2200.dothome.co.kr/port2/index1.html" target="_blank">
+                        <img src="./assets/img/port2.jpg" />
+                        <div class="slide-tit">Portfolio</div>
+                        <div class="slide-info">Inyoung's portfolio site</div>
+                    </a>
+                    <a class="swiper-slide" href="http://inyoung222000.dothome.co.kr/index2.html" target="_blank">
+                        <img src="./assets/img/port3.jpg" />
+                        <div class="slide-tit">Portfolio</div>
+                        <div class="slide-info">Inyoung's portfolio site</div>
+                    </a>
+                    <a class="swiper-slide" href="http://inyoung2200.dothome.co.kr/portfolio/pages/main.html" target="_blank">
+                        <img src="./assets/img/port4.jpg" />
+                        <div class="slide-tit">Portfolio</div>
+                        <div class="slide-info">Inyoung's portfolio site</div>
+                    </a>
+                    <a class="swiper-slide" href="http://inyoung2200.dothome.co.kr/megabox/index21.html" target="_blank">
+                        <img src="./assets/img/megabox.jpg" />
+                        <div class="slide-tit">Clone Coding</div>
+                        <div class="slide-info">Megabox</div>
+                    </a>
+                    <a class="swiper-slide" href="http://inyoung2200.dothome.co.kr/responsive/index.html" target="_blank">
+                        <img src="./assets/img/respon.jpg" />
+                        <div class="slide-tit">Clone Coding</div>
+                        <div class="slide-info">Responsive Website</div>
+                    </a>
+                    <a class="swiper-slide"
+                        href="http://inyoung222000.dothome.co.kr/portfolio/sparos/pages/04contents_01dashboard.html" target="_blank">
+                        <img src="./assets/img/sparos.jpg" />
+                        <div class="slide-tit">Clone Coding</div>
+                        <div class="slide-info">Shinsegae Admin Site</div>
+                    </a>
+                    <a class="swiper-slide" href="http://inyoung222000.dothome.co.kr/portfolio/nhis/pages/main.html" target="_blank">
+                        <img src="./assets/img/nhis.jpg" />
+                        <div class="slide-tit">Clone Coding</div>
+                        <div class="slide-info">NHI website</div>
+                    </a>
+                    <a class="swiper-slide"
+                        href="http://inyoung222000.dothome.co.kr/portfolio/Emart_Everyday_H/pages/main2.html" target="_blank">
+                        <img src="./assets/img/emartapp.jpg" />
+                        <div class="slide-tit">Clone Coding</div>
+                        <div class="slide-info">E-Mart Everyday App</div>
+                    </a>
+                    <a class="swiper-slide"
+                        href="http://inyoung222000.dothome.co.kr/portfolio/woowahan/pages/main.html" target="_blank">
+                        <img src="./assets/img/woowahan.jpg" />
+                        <div class="slide-tit">Clone Coding</div>
+                        <div class="slide-info">Woowahan brothers website</div>
+                    </a>
+                    <a class="swiper-slide"
+                        href="http://inyoung222000.dothome.co.kr/portfolio/whitetiger/pages/main.html" target="_blank">
+                        <img src="./assets/img/whitetiger.jpg" />
+                        <div class="slide-tit">Clone Coding</div>
+                        <div class="slide-info">Whitetiger website</div>
+                    </a>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>

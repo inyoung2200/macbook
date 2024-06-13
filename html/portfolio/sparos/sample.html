@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            display: grid;
+            grid-template-rows:
+                [1] 100px [2] 30% [3] auto;
+            grid-template-columns:
+                [first] 100px [line2] 200px [line3] auto [col4-start] 100px [five] 200px [end];
+        }
+
+        .item1 {
+            background-color: #FA6A53;
+        }
+
+        .item2 {
+            background-color: #DE494C;
+        }
+
+        .item3 {
+            background-color: #F55DAB;
+        }
+
+        .item4 {
+            background-color: #DC49DE;
+        }
+
+        .item5 {
+            background-color: #CB53FA;
+        }
+
+        .item6 {
+            background-color: rgb(169, 83, 250);
+        }
+
+        .container>div {}
+
+        .container>div>span {
+            color: #fff;
+            font-size: 50px;
+            font-weight: bold;
+            padding: 30px;
+        }
+    </style>
+
+
+    <div class="container">
+        <div class="item1"><span>1</span></div>
+        <div class="item2"><span>2</span></div>
+        <div class="item3"><span>3</span></div>
+        <div class="item4"><span>4</span></div>
+        <div class="item5"><span>5</span></div>
+        <div class="item6"><span>6</span></div>
+    </div>
+</body>
+
+</html>

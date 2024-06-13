@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: #1f2530;
+}
+
+/* 헤더 */
+.service_header {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+
+@media (max-width:540px){
+    .service_header {
+        padding-top: 60px;
+        padding-bottom: 52px;
+    }
+    .service_header .com_header_tit {
+        width: 152px;
+    }
+}
+
+/* 메인 */
+.service_main {
+    display: grid;
+    justify-content: center;
+}
+
+.service_main ul {
+    display: grid;
+    justify-content: center;
+}
+
+.service_main ul li:nth-child(2) {
+    margin-top: 38px;
+}
+.service_main ul li:nth-child(3) {
+    margin-top: 36px;
+}
+.service_main .keep_chek {
+    margin: 0 0 0 29px;
+}
+.service_main .keep_chek span {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 14px;
+    color: #e24f39;
+}
+.agreecheck_box{
+    width: 1130px;
+    height: 66px;
+    line-height: 66px;
+    border-radius: 10px;
+    background-color: #282d37;
+}
+
+.agreecheck_box .keep_chek .keep_text{
+    color: #fff;
+}
+
+@media (max-width:1200px){
+    .agreecheck_box{
+        width: 88.6vw;
+    }
+}
+
+@media (max-width:540px){
+    .service_main .keep_chek {
+        margin: 0 0 0 5.6vw;
+    }
+    
+    .service_main .keep_chek span {
+        font-size: 10px;
+    }
+
+    .service_main ul li:nth-child(2) {
+        margin-top: 30px;
+    }
+    .service_main ul li:nth-child(3) {
+        margin-top: 30px;
+    }
+
+    .agreecheck_box{
+        width: 88.6vw;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 10px;
+        background-color: #282d37;
+    }
+}
+
+/* 푸터 */
+.service_footer {
+    padding-top: 45px;
+    padding-bottom: 199px;
+}
+
+.service_footer .com_btn2_gray {
+    margin-right: 20px;
+}
+
+@media (max-width:540px){
+    .service_footer {
+        padding-top: 29px;
+        padding-bottom: 30px;
+    }
+    
+    .service_footer .com_btn2_gray {
+        margin-right: 12px;
+    }
+    
+}

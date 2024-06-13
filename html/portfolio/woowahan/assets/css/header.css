@@ -1,0 +1,125 @@
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+    background: #fff;
+    border-bottom: 1px solid #d6d7da;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1180px;
+  height: 72px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ico_logo {
+  width: 115px;
+  height: 32.17px;
+}
+
+.header_container h1 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.header_nav {
+  display: flex;
+}
+
+.header_nav.moblie {
+  display: none;
+}
+
+.header_container .header_nav a {
+  color: #232324;
+}
+
+
+.header_container .header_nav .header_center {
+  display: flex;
+
+}
+
+.header_container .header_nav .header_center .menu_name {
+  padding: 0 17px;
+}
+
+.header_container .header_nav .header_center .menu_name a {
+  font-size: 16px;
+}
+
+.header_container .header_nav .header_right {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+
+}
+
+.header_container .header_nav .header_right .menu_name {
+  padding: 0 12px;
+}
+
+.header_container .header_nav .header_right .menu_name a {
+  font-size: 12px;
+}
+
+/* .header_container .header_nav .header_right .menu_name svg {
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+} */
+
+.header_container .header_nav .header_right .menu_name.korean::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  width: 1px;
+  height: 10px;
+  margin-top: -2px;
+  background-color: #d6d7da;
+}
+
+.header_container .header_nav .header_right .menu_name.korean a {color: #d6d7da;}
+.header_container .header_nav .header_right .menu_name.english a {
+  color: #d6d7da;
+}
+
+.header_container .header_nav .header_right .menu_name.korean.on a {
+  color: #232324;
+  font-weight: bold;
+}
+
+.header_nav.moblie .ico_ham {
+  padding: 0 40px;
+}
+
+
+@media (max-width:1278px) {
+  .header_container h1 {padding: 0 40px;}
+  .header_container .header_nav .header_right {padding: 0 40px;}
+}
+
+@media (max-width: 1040px) {
+  .header_container .header_nav .header_right .none {display: none;}
+}
+
+@media (max-width: 980px) {
+  .header_container {
+    justify-content: end;
+    height: 50px;
+  }
+  .header_nav.pc {display: none;}
+  .header_nav.moblie  {display: block;}
+}
+

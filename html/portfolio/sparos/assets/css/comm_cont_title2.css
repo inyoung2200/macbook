@@ -1,0 +1,18 @@
+.section_subtit {
+    padding: 26px 0 24px 0;
+    display: flex;
+}
+.section_subtit h3 {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 16px;
+    color: #333;
+}
+.section_subtit div {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 14px;
+    color: #333;
+}
+.section_subtit div span {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    color: #e24f39;
+}

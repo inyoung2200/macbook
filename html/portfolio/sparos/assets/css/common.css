@@ -1,0 +1,372 @@
+/* 폰트 */
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    src: url(../fonts/SPOQAHANSANSNEO-MEDIUM.TTF);
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url(../fonts/SPOQAHANSANSNEO-REGULAR.TTF);
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    src: url(../fonts/SPOQAHANSANSNEO-BOLD.TTF);
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Light';
+    src: url(../fonts/SPOQAHANSANSNEO-LIGHT.TTF);
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Thin';
+    src: url(../fonts/SPOQAHANSANSNEO-THIN.TTF);
+}
+
+/* 타이틀 */
+.com_header_tit {
+    text-align: center;
+}
+
+.com_header_tit h1 {
+    color: #fff;
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 30px;
+    line-height: 38px;
+}
+
+@media (max-width: 540px) {
+    .com_header_tit h1 {
+        color: #fff;
+        font-size: 26px;
+    }
+}
+
+/* 인풋 */
+.com_inputbox {
+    display: grid;
+    justify-content: center;
+}
+
+.input_text {
+    width: 430px;
+    height: 52px;
+    border-radius: 10px;
+    background-color: #363b45;
+    margin: 11px;
+    padding-left: 16px;
+    color: #fff;
+}
+
+.input_text::placeholder {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 18px;
+    color: #5e636f;
+}
+
+@media (max-width: 540px) {
+    .input_text {
+        width: 88.9vw;
+        height: 50px;
+        margin: 1.4vw;
+    }
+
+    .input_text::placeholder {
+        font-size: 14px;
+    }
+
+    .keep_chek {
+        margin: 12px 5px 0;
+    }
+
+    input[id="keep"]+label::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .keep_chek .keep_text {
+        margin-left: 26px;
+        font-size: 15px;
+    }
+}
+
+/* 체크박스 */
+.keep_chek {
+    position: relative;
+    margin: 15px 11px 0;
+}
+
+.keep_chek .input_chek {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+}
+
+.keep_chek .keep_text {
+    margin-left: 32px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 18px;
+    color: #5e636f;
+}
+
+input[id="keep"]+label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url(../icon/com_ico_check3x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@media (max-width: 540px) {
+    .keep_chek {
+        margin: 12px 5px 0;
+    }
+
+    input[id="keep"]+label::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    .keep_chek .keep_text {
+        margin-left: 26px;
+        font-size: 15px;
+    }
+}
+
+/* 버튼1 */
+.com_btn1_wrap {
+    margin-top: 42px;
+    text-align: center;
+}
+
+.com_btn1 {
+    width: 430px;
+    height: 62px;
+    border-radius: 10px;
+    background: #e24f39;
+}
+
+.com_btn1 .btn_text {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 22px;
+    color: #fff;
+}
+
+@media (max-width: 540px) {
+    .com_btn1_wrap {
+        margin-top: 10.0vw;
+    }
+
+    .com_btn1 {
+        width: 88.9vw;
+        height: 60px;
+    }
+
+    .com_btn1 .btn_text {
+        font-size: 18px;
+    }
+}
+
+/* 버튼2 */
+.com_btn2_wrap {
+    text-align: center;
+}
+
+.com_btn2_gray {
+    width: 233px;
+    height: 62px;
+    border-radius: 10px;
+    background-color: #9f9b9b;
+}
+
+.com_btn2_gray .btn_text {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 22px;
+    color: #1f2530;
+}
+
+.com_btn2_red {
+    width: 233px;
+    height: 62px;
+    border-radius: 10px;
+    background-color: #e24f39;
+}
+
+.com_btn2_red .btn_text {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    font-size: 22px;
+    color: #fff;
+}
+
+@media (max-width: 540px) {
+    .com_btn2_gray {
+        width: 42.8vw;
+        height: 60px;
+    }
+
+    .com_btn2_red {
+        width: 42.8vw;
+        height: 60px;
+    }
+}
+
+/* 버튼3 */
+.com_btn3_wrap {
+    margin-top: 70px;
+}
+
+.com_btn3_wrap .com_btn3 {
+    width: 186px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #414652;
+}
+
+.com_btn3_wrap .com_btn3 .btn_text {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    font-size: 18px;
+    color: #fff;
+}
+
+@media (max-width: 540px) {
+    .com_btn3_wrap {
+        margin-top: 40px;
+    }
+
+    .com_btn3_wrap .com_btn3 {
+        width: 132px;
+        height: 34px;
+    }
+
+    .com_btn3_wrap .com_btn3 .btn_text {
+        font-size: 14px;
+    }
+}
+
+/* 약관동의 텍스트박스 */
+.agreetext_box {
+    width: 1130px;
+    height: 340px;
+    padding: 28px 0;
+    margin-top: 17px;
+    border-radius: 10px;
+    background: #282d37;
+}
+
+.text_article {
+    height: 284px;
+    border-radius: 10px;
+    overflow: auto;
+    margin: 0 28px;
+}
+
+.text_article p {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 12px;
+    line-height: 15px;
+    color: #7a808e;
+    margin-right: 22px
+}
+
+.agreetext_box .text_article::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 3px;
+}
+
+.agreetext_box .text_article::-webkit-scrollbar-thumb {
+    background-color: #3c4047;
+    border-radius: 3px;
+}
+
+.agreetext_box .text_article::-webkit-scrollbar-track {
+    background-color: #1f2530;
+}
+
+@media (max-width: 1200px) {
+    .agreetext_box {
+        width: 88.9vw;
+        height: 340px;
+    }
+}
+
+@media (max-width: 540px) {
+    .agreetext_box {
+        width: 88.9vw;
+        height: 221px;
+        padding: 5.6vw 0;
+        margin-top: 12px;
+    }
+
+    .text_article {
+        height: 178px;
+        overflow: auto;
+        margin: 0 20px;
+    }
+
+    .text_article p {
+        line-height: 20px;
+        margin-right: 34px
+    }
+}
+
+
+/* 구분선 */
+.contour {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.contour .line {
+    width: 500px;
+    height: 1px;
+    background-color: #282e3b;
+    margin-top: 76px;
+}
+
+@media (max-width: 540px) {
+    .contour .line {
+        width: 88.6vw;
+        margin-top: 19.4vw;
+    }
+}
+
+/* 푸터 텍스트 */
+.footer_text {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_text ul {
+    width: 434px;
+    margin-top: 70px;
+}
+
+.footer_text ul li {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-size: 16px;
+    line-height: 28px;
+    color: #7a808e;
+    list-style-type: "- ";
+    display: list-item;
+}
+
+@media (max-width: 540px) {
+    .footer_text ul {
+        width: 88.9vw;
+        margin-top: 11.1vw;
+    }
+
+    .footer_text ul li {
+        font-size: 12px;
+        line-height: 21px;
+        letter-spacing: -0.07px;
+    }
+}

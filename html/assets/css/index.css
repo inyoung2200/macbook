@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu_wrap {
+    position: fixed;
+    right: 3vw;
+    top: 6vh;
+    z-index: 100;
+}
+
+.menu_container {}
+
+.acomenu_list {
+    display: block;
+}
+
+
+.acomenu_tit {
+    font-family: 'Roboto';
+    font-size: 2.5vw;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+}
+
+.acomenu_tit:hover {
+    color: #007bbe;
+}
+
+.acomenu_subject {
+    display: none;
+    font-family: 'Roboto';
+    font-size: 2.5vw;
+    font-weight: 400;
+    padding-left: -40px;
+    list-style-position: unset;
+}
+
+.acomenu_cont_wrap p {
+    color: #000;
+}
+
+.acomenu_cont_wrap p:hover {
+    color: red;
+}
+
+
+#sec1_main {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 5vh;
+}
+
+.sec1_container {
+    position: relative;
+    
+}
+
+.sec1_tit {
+    padding-left: 3vw;
+}
+
+.sec1_tit1 {
+    /* position: absolute;
+    top: 40vh;
+    left: calc(var(--leftMargin) + var(--col));
+    transform: translateY(-50%); */
+    font-family: 'Roboto';
+    font-size: 18vw;
+    font-weight: 500;
+    display: flex;
+}
+
+.sec1_tit2 {
+    font-family: 'Roboto';
+    font-size: 18vw;
+    font-weight: 500;
+    margin-top: -7vh;
+    display: flex;
+}
+
+/* .sec1_tit1 .n1 {
+    margin-right: 50px;
+} */
+
+.scroll {
+    font-family: 'Roboto';
+    font-size: 2.5vw;
+    font-weight: 400;
+    padding-left: 4.3vw;
+}
+
+.sec1_img {
+    width: 14vw;
+    height: 15vw;
+    background: url(../img/davisuko-5E5N49RWtbA-unsplash.jpg) center center;
+    background-size: cover;
+    float: right;
+    margin-right: 3vw;
+    transform: translateY(-110%);
+    transform-origin: 94% 70%;
+    position: relative;
+    z-index: -1;
+}
+
+@media (max-width: 1669px){
+    #sec1_main {
+        position: static;
+    }
+
+    .sec1_tit {
+        padding-top: 1vw;
+    }
+
+    .sec1_tit2 {
+        margin-top: -5vh;
+    }
+
+    .scroll {
+        padding-top: 6vw;
+    }
+}
+
+@media (max-width: 1500px){
+    .sec1_img {
+        width: 17vw;
+        height: 18vw;
+        transform: translateY(-120%);
+    }
+}
+
+@media (max-width: 1150px){
+    .sec1_tit2 {
+        margin-top: -3vh;
+    }
+}

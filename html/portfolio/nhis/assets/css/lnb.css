@@ -1,0 +1,129 @@
+#lnb {
+  width: 232px;
+}
+
+#lnb .container {}
+
+#lnb .container h2 {}
+
+#lnb .container .cate_wrap {
+  padding-top: 55px;
+}
+
+#lnb .container .cate_wrap ul {
+  border-top: 2px solid #3a3a4a;
+}
+
+#lnb .container .cate_wrap ul li {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #e1e3e6;
+  display: flex;
+  align-items: center;
+}
+
+#lnb .container .cate_wrap ul li a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  color: #6c6d73;
+  font-size: 16px;
+  padding: 17px 0;
+}
+
+#lnb .container .cate_wrap ul li:hover a {
+  color: #ee0700;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+#lnb .container .cate_wrap ul li.on a {
+  color: #ee0700;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* 모바일 아코디언메뉴 */
+#lnb {}
+
+#lnb .container {}
+
+#lnb .container .cate_wrap.mobile {
+  padding-top: 15px;
+  display: none;
+}
+
+#lnb .container .cate_wrap.mobile .select_cate {
+  display: flex;
+  align-items: center;
+  background: #f5f7fa;
+  padding: 13px 0 13px 14px;
+  border-top: 1px solid #e1e3e6;
+}
+
+#lnb .container .cate_wrap.mobile .select_cate div {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.28px;
+  color: #ee0700;
+}
+
+#lnb .container .cate_wrap.mobile .select_cate .icon_down {
+  width: 15px;
+  height: 15px;
+  background: url(../icon/그룹\ 63@2x.png);
+  background-size: cover;
+  margin-left: 6px;
+}
+
+#lnb .container .cate_wrap.mobile .select_cate.on .icon_down {
+  background: url(../icon/그룹\ 64@2x.png);
+  background-size: cover;
+}
+
+#lnb .container .cate_wrap.mobile .accordion_menu {
+  display: none;
+  overflow: hidden;
+}
+
+#lnb .container .cate_wrap.mobile .accordion_menu ul {
+  padding: 20px 14px;
+  border: 0;
+}
+
+#lnb .container .cate_wrap.mobile .accordion_menu ul li {
+  padding: 11px 0;
+  border-bottom: 0;
+}
+
+#lnb .container .cate_wrap.mobile .accordion_menu ul li.on {}
+
+#lnb .container .cate_wrap.mobile .accordion_menu ul li a {}
+
+
+/* 타블렛 */
+@media screen and (max-width:1023px) {
+  #lnb .container .cate_wrap.mobile {
+    padding-top: 15px;
+    display: block;
+  }
+
+  .cate_wrap.pc {
+    display: none;
+  }
+
+  #lnb {
+    width: 100%;
+  }
+
+  #lnb .container h2 {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+  
+}

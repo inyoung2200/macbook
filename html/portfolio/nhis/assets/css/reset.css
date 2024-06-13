@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+}
+
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+select {
+  appearance: none;
+  /* 화살표 없애기 공통*/
+  -webkit-appearance: none;
+  /* 화살표 없애기 for chrome*/
+  -moz-appearance: none;
+  /* 화살표 없애기 for firefox*/
+  padding-left: 18px;
+}
+
+select::-ms-expand {
+  display: none;
+  /* 화살표 없애기 for IE10, 11*/
+}
+
+button {
+  border: 0;
+  background-color: unset;
+}
+
+h1 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -0.72px;
+  color: #3a3a4a;
+}
+
+h2 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.56px;
+  color: #3a3a4a;
+}
+
+h3 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.4px;
+  color: #3a3a4a;
+}
+
+h4 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.36px;
+  color: #3a3a4a;
+}
+
+/* 모바일 */
+@media screen and (max-width:1023px) {
+  h1 {
+    font-size: 20px;
+    letter-spacing: -0.4px;
+  }
+
+  h2 {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+
+  h3 {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+
+  h4 {
+    font-size: 15px;
+    letter-spacing: -0.3px;
+  }
+}

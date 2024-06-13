@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국민건강보험 코딩리스트</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        header {
+            height: 50px;
+            background-color: #999;
+            display: block;
+        }
+
+        header p {
+            text-align: center;
+            line-height: 50px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            margin-left: -40px;
+            text-align: center;
+        }
+
+        nav li {
+            line-height: 40px;
+            background-color: #777;
+            font-size: 16px;
+        }
+
+        nav li:nth-child(2) {
+            margin-left: 2px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 3vw;
+        }
+
+        table {
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: rgb(241 241 241);
+        }
+
+        td {
+            border: 1px solid rgb(241 241 241);
+            padding: 10px;
+        }
+
+        .tab_anc.on {
+            background-color: rgb(0, 117, 117);
+        }
+        .tab_cont.on {display: block;}
+        .tab_cont {display: none;}
+
+
+        .tit_Individual {
+            height: 50px;
+            line-height: 80px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .tit_common {
+            height: 60px;
+            line-height: 90px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .Individual {
+            margin-bottom: 100px;
+        }
+    </style>
+
+
+
+    <header>
+        <p>국민건강보험 NHIS</p>
+    </header>
+    <nav>
+        <ul class="tab_list">
+            <li class="tab_anc on"><a href="#">PC</a></li>
+            <li class="tab_anc"><a href="#">MOBILE</a></li>
+        </ul>
+    </nav>
+    <main >
+        <div class="tab_cont on">
+            <div class="tit_common">
+                <p>W - common</p>
+            </div>
+            <table class="common">
+                <tr >
+                    <th>1depth</th>
+                    <th>folder</th>
+                    <th>work</th>
+                    <th>link</th>
+                    <th>progress</th>
+                </tr>
+                <tr>
+                    <td>헤더</td>
+                    <td>
+                        
+                    </td>
+                    <td>홍인영</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>아코디언메뉴</td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>탭메뉴</td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>인풋</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>버튼</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>컨텐츠-대타이틀</td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>컨텐츠-중타이틀</td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>원형그래프박스</td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>푸터</td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="tit_Individual">
+                <p>W - Individual</p>
+            </div>
+            <table class="Individual">
+                <tr >
+                    <th>1depth</th>
+                    <th>2depth</th>
+                    <th>3depth</th>
+                    <th>folder</th>
+                    <th>work</th>
+                    <th>link</th>
+                    <th>progress</th>
+                </tr>
+                <tr>
+                    <td>01 Main</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>홍인영</td>
+                    <td></td>
+                    <td>왼료</td>
+                </tr>
+                <tr>
+                    <td>05 국민과함께</td>
+                    <td>01 정보공개제도란</td>
+                    <td></td>
+                    <td></td>
+                    <td>홍인영</td>
+                    <td></td>
+                    <td>왼료</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>02 국민생활정보</td>
+                    <td></td>
+                    <td></td>
+                    <td>홍인영</td>
+                    <td></td>
+                    <td>왼료</td>
+                </tr>
+                <tr>
+                    <td>06 공단요모조모</td>
+                    <td>01 이사장인사말</td>
+                    <td></td>
+                    <td></td>
+                    <td>홍인영</td>
+                    <td></td>
+                    <td>왼료</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>02 상징</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        
+        <div class="tab_cont">
+            <div class="tit_common">
+                <p>M - common</p>
+            </div>
+            <table class="common">
+                <tr >
+                    <th>1depth</th>
+                    <th>folder</th>
+                    <th>work</th>
+                    <th>link</th>
+                    <th>progress</th>
+                </tr>
+                <tr>
+                    <td>헤더</td>
+                    <td>nhis/common/header.html</td>
+                    <td>홍인영</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>아코디언메뉴</td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>탭메뉴</td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>인풋</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>버튼</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>컨텐츠-대타이틀</td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>컨텐츠-중타이틀</td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>원형그래프박스</td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>푸터</td>
+                    <td>
+                        
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="tit_Individual">
+                <p>M - Individual</p>
+            </div>
+            <table class="Individual">
+                <tr >
+                    <th>1depth</th>
+                    <th>2depth</th>
+                    <th>3depth</th>
+                    <th>folder</th>
+                    <th>work</th>
+                    <th>link</th>
+                    <th>progress</th>
+                </tr>
+                <tr>
+                    <td>01 Main</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>홍인영</td>
+                    <td></td>
+                    <td>왼료</td>
+                </tr>
+                <tr>
+                    <td>05 국민과함께</td>
+                    <td>01 정보공개제도란</td>
+                    <td></td>
+                    <td></td>
+                    <td>홍인영</td>
+                    <td></td>
+                    <td>왼료</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>02 국민생활정보</td>
+                    <td></td>
+                    <td></td>
+                    <td>홍인영</td>
+                    <td></td>
+                    <td>왼료</td>
+                </tr>
+                <tr>
+                    <td>06 공단요모조모</td>
+                    <td>01 이사장인사말</td>
+                    <td></td>
+                    <td></td>
+                    <td>홍인영</td>
+                    <td></td>
+                    <td>왼료</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>02 상징</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            $(document).on("click", '.tab_list .tab_anc', function (e) {
+                e.preventDefault();
+                var index = $(this).index();
+                $('.tab_cont').eq(index).addClass("on").siblings().removeClass('on');
+                $(this).addClass('on').siblings().removeClass('on');
+            });
+        })
+    </script>
+
+</body>
+
+</html>
